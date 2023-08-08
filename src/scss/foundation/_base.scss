@@ -19,9 +19,141 @@ body {
 }
 
 
+.three-row {
+  display: flex;
+  justify-content: space-between;
+  .row{
+    width: 33.3%
+  }
+}
+
+.card{
+  transition: all ease 0.3s;
+  border-radius: 15px;
+  padding: 0px 15px 15px;
+  // cursor: pointer;
+  .card-img {
+    width: 385px;
+    height: 425px;
+    display: flex;
+    align-items: center;
+    img{
+      object-fit: cover;
+      width: 100%;;
+    }
+  }
+  .card-content{
+    padding-left: 16px;
+    padding-top: 5px;
+    a{
+      transition: all ease 0.3s;
+      display: block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .small_text{
+    margin-bottom: 15px;
+  }
+  &:hover{
+    box-shadow: -6px 7px 30px #e2e2e2;
+  }
+}
+
+.sizes_block{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 9px;
+  .size{
+    width: 52px;
+    height: 52px;
+    background-color: #F7F7F7;
+    border-radius: 100%; 
+    display: flex;
+    align-items: center;
+    align-self: center;
+    font-family: inherit;
+    color: h.$primary-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    text-align: center;
+    justify-content: center;
+    margin-right: 14px;
+    transition: all ease 0.3s;
+    margin-bottom: 10px;;
+    &:hover, &.active{
+      color: #fff;
+      background-color: h.$accent-color ;
+    }
+  }
+}
+
+
+.characters-table{
+  padding: 0px 40px 10px 0px;
+  .line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 43px;
+    padding: 6px 5px 7px 0;
+  }
+   .line:not(:last-child){ 
+    border-bottom: 1px solid #D1D1D1;
+   }
+   .small_text{
+      margin-bottom: 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: none;
+      white-space: nowrap;
+      width: 80%;
+   }
+}
+
+
+
+@media screen and (max-width: 1300px){
+  .card .card-img{
+    width: 100%;
+    height: 272px;
+  }
+}
+
+
 @media screen and (max-width: 760px){
   .container {
     padding: 0 22px 0 20px;
+  }
+  .three-row{
+    flex-direction: column;
+    align-items: center;
+    .row{
+      width: 100%;
+    }
+  }
+  .card{
+    padding: 0px 5px;;
+  }
+  .card .card-img {
+    height: auto;
+    width: 100%;
+    margin: 81px 0px 64px;
+  }
+  .card .card-content{
+    padding-left: 0px;;
+  }
+  .characters-table {
+    padding: 0px 0px 10px 0;
+  }
+  .characters-table .line{
+    height: 39px;
+    padding: 5px 5px 5px 0;
   }
 }
 

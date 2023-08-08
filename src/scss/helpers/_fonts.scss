@@ -36,7 +36,7 @@ h2, .h2{
 }
 
 //subheader
-h3, .h3 {
+h3, .h3 , .h3_subname {
   color:  c.$primary-color;
   font-size: 20px;
   font-weight: 700;
@@ -44,8 +44,9 @@ h3, .h3 {
   letter-spacing: inherit;
 }
 
-p, .p{
 
+
+p, .p{
   font-variant-numeric: stacked-fractions;
   font-feature-settings: 'hlig' on, 'dlig' on;
   font-size: 16px;
@@ -79,6 +80,19 @@ p, .p{
   color: c.$accent-color
 }
 
+.small_text{
+  color: c.$primary-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  &__bold{
+    font-weight: 600;
+    font-size: 14px;;
+  }
+}
+
+
 
 @media screen and(max-width: 1300px){
   .big-text {
@@ -98,5 +112,14 @@ p, .p{
   .normal_text, .normal_text-gray {
     font-size: 14px;
   }
-  
+  h2, .h2{
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (max-width: 360px){
+  .h2, h2 {
+    font-size: 29px;
+}
 }

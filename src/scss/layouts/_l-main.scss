@@ -51,6 +51,25 @@
 }
 
 
+.popular{
+    padding-top: 92px;
+    margin-bottom: 80px;
+    .h2{
+        margin-bottom: 12px;;
+    }
+    .h3{
+        text-transform: uppercase;
+    }
+    .h3.h3_subname {
+        text-transform: none;
+        margin-bottom: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+
 @media screen and (max-width: 1300px){
     .main-page-block .down-block{
         bottom: 0px;
@@ -92,6 +111,7 @@
     }
     .main-page-block{
         flex-direction: column;
+        margin-bottom: 40px;;
         .image-part{
             order: 2;
             width: 450px;
@@ -137,6 +157,10 @@
         padding-top: 80px;
     }
 
+    .popular{
+        padding-top: 32px;
+    }
+
 }
 
 
@@ -168,6 +192,6 @@
         font-style: normal;
         font-weight: 600;
         line-height: 150%; /* 27px */
-        padding-left: 10px;;
+        padding-left: 10px;
       }
 }
