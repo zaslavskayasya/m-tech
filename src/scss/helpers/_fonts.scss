@@ -15,6 +15,7 @@ $font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hir
   font-size: 45px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: inherit;
 }
 
 h1, .h1{
@@ -23,6 +24,7 @@ h1, .h1{
   font-weight: 700;
   line-height: 140%; /* 84px */
   text-transform: uppercase;
+  letter-spacing: inherit;
 }
 
 h2, .h2{
@@ -30,6 +32,7 @@ h2, .h2{
   font-size: 40px;
   font-weight: 600;
   line-height: 116%; /* 46.4px */
+  letter-spacing: inherit;
 }
 
 //subheader
@@ -38,6 +41,7 @@ h3, .h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 160%; /* 32px */
+  letter-spacing: inherit;
 }
 
 p, .p{
@@ -54,16 +58,45 @@ p, .p{
   color: c.$sub-primary;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: inherit;
 }
 
 .normal_text{
   color: c.$primary-color;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: inherit;
 }
 
 .normal_text-heading{
   color: c.$sub-primary;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: inherit;
+}
+
+.accent{
+  color: c.$accent-color
+}
+
+
+@media screen and(max-width: 1300px){
+  .big-text {
+    font-size: 41px;
+    line-height: 135%;
+  }
+}
+
+@media screen and(max-width: 1300px){
+  .big-text {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 760px){
+  .normal_text, .normal_text-gray {
+    font-size: 14px;
+  }
+  
 }
