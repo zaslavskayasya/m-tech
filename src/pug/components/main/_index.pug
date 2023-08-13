@@ -95,3 +95,151 @@ main.l-main
                                 .line 
                                     span.small_text Дистанция обнаружения
                                     span.small_text__bold  2500м
+.full-screen-block 
+    .container
+        h2.h2 Новинки
+        .nav-block
+            .custom-prev-button.custom-nav
+                img(src="../img/icons/arr-left.svg", alt="")
+            .custom-next-button.custom-nav 
+                img(src="../img/icons/arr-righ.svg", alt="")
+    .new-slider 
+        .slide
+            .news-block
+                .part-left
+                    p.new-name Новинка 
+                    a(href="#").new-header Монокуляр МТ-EVO-SHOT
+                    p.new-subscribtion  Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту.
+                .part-right 
+                    a(href="#").news-link
+                        span Переглянути
+                        img(src="../img/icons/precision.svg", alt="") 
+            .wrap-main-img 
+                img(src="./img/illustration/illustration.png", alt="")                
+        .slide 
+            .news-block
+                .part-left
+                    p.new-name Новинка 
+                    p.new-header Монокуляр МТ-EVO-SHOT
+                    p.new-subscribtion  Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту.
+                .part-right 
+                    a(href="#").news-link
+                        span Переглянути
+                        img(src="../img/icons/precision.svg", alt="") 
+            .wrap-main-img 
+                img(src="./img/illustration/illustration.png", alt="")
+        .slide 
+            .news-block
+                .part-left
+                    p.new-name Новинка 
+                    p.new-header Монокуляр МТ-EVO-SHOT
+                    p.new-subscribtion  Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту.
+                .part-right 
+                    a(href="#").news-link
+                        span Переглянути
+                        img(src="../img/icons/precision.svg", alt="") 
+            .wrap-main-img 
+                img(src="./img/illustration/illustration.png", alt="")
+        .slide
+            .news-block
+                .part-left
+                    p.new-name Новинка 
+                    p.new-header Монокуляр МТ-EVO-SHOT
+                    p.new-subscribtion  Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту.
+                .part-right 
+                    a(href="#").news-link
+                        span Переглянути
+                        img(src="../img/icons/precision.svg", alt="") 
+            .wrap-main-img 
+                img(src="./img/illustration/illustration.png", alt="")
+.container 
+    .partners 
+        h2.h2 Партнери
+        .partners-block
+            .partner-item
+                img(src="./img/partners/1.svg", alt="partner.name")
+            .partner-item
+                img(src="./img/partners/2.svg", alt="partner.name")
+            .partner-item
+                img(src="./img/partners/3.svg", alt="partner.name")
+            .partner-item
+                img(src="./img/partners/4.svg", alt="partner.name")
+            .partner-item
+                img(src="./img/partners/5.svg", alt="partner.name")
+.grey-bg 
+    .container
+        .consulting
+            .part-text 
+                h2.h2 Заявка 
+                    span на консультацію
+                p.normal_text-gray Бажаєте дізнатися більше? Залишіть свій номер телефону і наш менеджер у найкоротші терміни із задоволенням зв'яжеться з вами
+            .form-part
+                form(id='contact-form' onsubmit='return validateForm(event)')
+                    .form-group
+                        label(for='phone') Номер телефону:
+                        input(type='tel', id='phone', name='phone', placeholder='Введіть номер телефону', pattern='[0-9]{10}', required)
+                        span.error-message(id='phone-error') Невірний номер
+                    .form-group
+                        label(for='message') Повідомлення:
+                        textarea(id='message', name='message', placeholder='Введіть повідомлення', required)
+                        span.error-message(id='message-error') Поле обовєязкове
+                    button.button(type='submit') Надіслати
+.container
+    h2.h2 Наша галерея
+    .gallery-block
+        .left-gallery
+            .nav-block
+                .custom-prev-button.custom-nav
+                    img(src="../img/icons/arr-left.svg", alt="")
+                .custom-next-button.custom-nav 
+                    img(src="../img/icons/arr-righ.svg", alt="") 
+            .slider-left
+                .slider 
+                    .wrap-main-img 
+                        img(src="./img/illustration/illustration.png", alt="") 
+                .slider 
+                    .wrap-main-img 
+                        img(src="./img/illustration/illustration.png", alt="") 
+        .right-gallery 
+            .video-gallery
+                .video 
+                    .video-wrap
+                        iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+                    a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
+                .video 
+                    .video-wrap
+                        iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+                    a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
+
+.container 
+    .last-news 
+        h2.h2  Останні новини  
+        .three-in-row-wrap
+            .item 
+                .wrap-item-image
+                    img(src="./img/illustration/illustration.png", alt="")
+                .item-subheader.small_text 
+                    span.teg ##монокуляр
+                    span.date 20/09/2020
+                a(href="#").full-text Pulsar приносить кардинальні новини на IWA OutdoorClassics  
+            .item 
+                .wrap-item-image
+                    img(src="./img/illustration/illustration.png", alt="")
+                .item-subheader.small_text  
+                    span.teg ##монокуляр
+                    span.date 20/09/2020
+                a(href="#").full-text Pulsar приносить кардинальні новини на IWA OutdoorClassics  
+            .item 
+                .wrap-item-image
+                    img(src="./img/illustration/illustration.png", alt="")
+                .item-subheader.small_text 
+                    span.teg ##монокуляр
+                    span.date 20/09/2020
+                a(href="#").full-text Pulsar приносить кардинальні новини на IWA OutdoorClassics  
+
+
+.popup(id='success-popup')
+    .popup-content
+        span.close-popup(id='close-popup') ×
+        p Ваше повідомлення надіслано! 
+
