@@ -513,10 +513,6 @@ body {
   .three-in-row-wrap .item-name{
       font-size: 12px;
   }
-}
-
-
-@media screen and (max-width: 630px){
   .three-in-row-wrap .wrap-item-image {
       height: 270px;
       width: 100%;
@@ -524,8 +520,15 @@ body {
   .three-in-row-wrap .item {
       width: 100%;
   }
-
+  .three-in-row-wrap .wrap-item-image {
+    height: 300px;
+    width: 100%;
+  }
+  .last-news{
+    margin-bottom: 100px;;
+  }
 }
+
 
 
 
@@ -544,9 +547,10 @@ body {
   .portfolio {
       padding: 30px 0;
   }
-  .three-in-row-wrap .item {
-      width: 47%;
-  }
+  .three-in-row-wrap .wrap-item-image {
+    height: 220px;
+    width: 100%;
+}
   .check:before {
       height: 17px;
       left: 2px;

@@ -3,8 +3,10 @@
 
 .main-screen {
     background-image: url(../img/illustration/main.png) ;
-    height: 1000px;
+    height: 100vh;
     background-size: cover;
+    background-position: center;
+    height: 1000px;
 }
 
 .l-main {
@@ -248,7 +250,7 @@
     }
     .nav-block{
         top: 558px;
-        right: 20px;
+        right: 19px;
     }
     .news-block .part-left {
         max-width: 58%;
@@ -299,6 +301,16 @@
 }
 
 @media screen and (max-width: 970px){
+    .full-screen-block{
+        margin-bottom: 50px;;
+    }
+    .gallery-block{
+        margin-bottom: 40px;
+    }
+    .last-news{
+        margin-top: 30px;;
+    }
+
     .l-main .big-text{
         margin-bottom: 34px;
     }
