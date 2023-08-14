@@ -1,5 +1,12 @@
 @use '../helpers' as h;
 
+
+.main-screen {
+    background-image: url(../img/illustration/main.png) ;
+    height: 1000px;
+    background-size: cover;
+}
+
 .l-main {
     padding-top: 180px;
     .big-text{

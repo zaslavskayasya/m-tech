@@ -1,2 +1,353 @@
-.l-header {
+@use '../helpers' as h;
+
+/* header */
+
+.header {
+  width: 100%;
+  z-index: 3;
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 49px ;
+  position: relative;
+  margin-bottom: 7px;
+  position: absolute;
+  color: #fff;
+  .logo{
+    left: 34px;
+    // position: absolute;
+    top: 28px;
+    width: 250px;
+    height: 68px;
+    img{
+        display: block;
+        width: 100%;
+    }
+  }
 }
+
+.center-nemu{
+    align-self: center;
+    display: flex;
+    align-self: center;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    li{ 
+        margin-right: 80px;
+    }
+}
+
+.for-mobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .menu.center-nemu{
+    align-self: center;
+    display: flex;
+    
+  }
+}
+
+.menu {
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;  
+  list-style-type: none;
+  transition: all ease 0.3s;
+//   margin-left: 24px;;
+    li{
+        &:not(:last-child) {
+            margin-right: 77px;
+        }
+        .dropbtn {
+            margin-right: 14px;
+        }
+        &:hover{
+            color: h.$accent-color;
+        }
+        .active{
+            color: h.$accent-color;
+        }            
+    }
+    .center-nemu li:not(:last-child) {
+        margin-right: 45px;
+    }
+}
+
+
+.menu-button{
+    display: none;
+}
+.close-button {
+    display: none;
+}
+
+.menu-link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+
+
+.menu a{
+    color: #F5F5F5;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+/* Dropup Button */
+.menu-item-has-children.dropup a:nth-child(1) {
+    position: relative; 
+    &::after{
+        content: "";
+        background-image: url(../img/icons/plus.svg);
+        display: block;
+        position: absolute;
+        height: 10px;
+
+        right: -20px;
+        background-position: right;
+        background-repeat: no-repeat;
+        top: 50%;
+        padding-left: 19px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 10px;
+    }
+}
+
+.menu li.active{
+    color: h.$accent-color;
+}
+.menu li:hover{
+    color: h.$accent-color;
+}
+.menu-item-has-children.dropup.active a:nth-child(1) {
+    color: h.$accent-color;
+}
+
+.menu-item-has-children.dropup.active .sub-menu a {
+    color: #fff;
+}
+
+.menu-item-has-children.dropup.active .sub-menu li.active a {
+    color: h.$accent-color;
+}
+
+
+.menu-item-has-children.dropup .sub-menu a{
+    &::after{
+        display: none;
+    }
+}
+
+
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.sub-menu {
+  display: none;
+  position: absolute;
+  top:10px;
+  padding-top: 20px;
+  background-color: transparent;
+  min-width: 230px;
+  z-index: 1;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.menu ul.sub-menu{
+    li{
+        margin-right: 0px;;
+    }
+}
+
+/* Links inside the dropup */
+.sub-menu a {
+  color: #fff;
+  padding: 12px 1px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.sub-menu a:hover {
+    color: h.$accent-color;
+}
+
+
+/* Show the dropup menu on hover */
+.dropup:hover .sub-menu {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+
+}
+
+
+@media screen and (max-width: 1520px){
+    .center-nemu{
+        display: block;
+            flex-direction: column;
+
+    }
+    .for-mobile{
+        position: absolute;
+        top: -100%;
+        background: #000;
+        left: 0px;
+        width: 100%;
+        padding: 80px;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: all ease 0.3s;
+        z-index: 9;
+    }
+    .div-for-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .open-header .for-mobile{
+        top: 0%;
+        transform: translateY(0%);
+    }
+   .header.open-header{
+    .for-mobile{
+        justify-content: flex-start;
+        align-items: flex-start;
+        }
+        .menu{
+            text-align: left;;
+        }
+    }
+    .menu-button{
+        display: block;
+        cursor: pointer;
+        order:2;
+        margin-top: 3px;
+    }
+    .close-button {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        transition: all ease 0.3s;
+        cursor: pointer;
+        &:hover{
+            svg path {
+                stroke: h.$accent-color;
+            }
+
+        }
+    }
+    .menu{
+        display: block;
+        flex-direction: column;
+        margin-right: 0px;
+        margin-bottom: 0px;;
+        text-align: left;;
+    }
+    .menu li:not(:last-child) {
+        margin-right: 0px;
+    }
+    .menu li{
+        margin-bottom: 15px;
+    }
+    .menu li .dropbtn {
+        margin-right: 0px;
+    }
+    .open-header{
+        .sub-menu{
+            position: relative;
+            background-color: transparent;
+            box-shadow: none;
+            text-align: left;
+            a{
+                padding: 7px 0px;
+            }
+        }
+        .dropup {
+            display: inline-block;
+            position: relative;
+                text-align: left;;
+
+            // margin-bottom: 33px;
+            li{
+                // text-align: left;
+                margin-bottom: 0px;;
+                font-weight: 400;
+            }
+        }
+        .dropup.open{
+            margin-bottom: 20px;
+            .sub-menu{
+                display: block;    
+                width: auto;      
+                text-align: left;;  
+                margin-bottom: 20px;;
+  
+            }
+        }
+    }
+    .open-header {
+    }
+    .dropup:hover .sub-menu {
+        display: none;
+    }
+   
+
+    .header {
+        padding: 32px 25px 32px 46px;
+    }
+    .header-contacts{
+        display: none;
+    }
+
+}
+
+.header.open-header{
+    .center-nemu{
+        flex-direction: column;
+        position: relative;
+        text-align: left;;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .header {
+        padding: 25px 15px;
+    }
+       .header .logo {
+        width: 200px;
+        height: auto;;
+    }
+    .hide-in-adaptive{
+        display: none;
+    } 
+}
+
+
