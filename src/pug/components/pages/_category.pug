@@ -1,0 +1,122 @@
+.tiny-header(style="background-image: url('../img/illustration/illustration2.png')")
+    .overlay
+    .container
+        ul.breadcrumb
+            li
+                a(href="#") Home
+            li
+                a(href="#") Category
+            li
+                span Subcategory
+
+        h1.h1  Прибори ТЕПЛОВІЗІЙНОГО БАЧЕННЯ   
+
+.container 
+    .popular
+        h2.h2 Популярні товари
+        .three-row 
+            .item
+                .card 
+                    .card-img 
+                        img(src="./img/items/1.png", alt="place for image")
+                    .card-content
+                        a(href="#")
+                            p.h3 EVO-SHOTS-S 
+                            p.h3.h3_subname thermal imaging monocular
+                        p.small_text Оптична система (мм):
+                        .sizes_block 
+                            .size.active 25 
+                            .size 35 
+                            .size 50 
+                            .size 75 
+                        .characters-table 
+                            .line 
+                                span.small_text Разрешение 
+                                span.small_text__bold  328х288
+                            .line 
+                                span.small_text Размер пикселя
+                                span.small_text__bold  17мкм
+                            .line 
+                                span.small_text Чувствительность
+                                span.small_text__bold  30мК
+                            .line 
+                                span.small_text Дистанция обнаружения
+                                span.small_text__bold  2500м
+            .item
+                .card 
+                    .card-img 
+                        img(src="./img/items/1.png", alt="place for image")
+                    .card-content
+                        a(href="#")
+                            p.h3 STRIGERS
+                            p.h3.h3_subname thermal sight
+                        p.small_text Оптична система (мм):
+                        .sizes_block 
+                            .size.active 25 
+                            .size 35 
+                            .size 50 
+                            .size 75 
+                        .characters-table 
+                            .line 
+                                span.small_text Разрешение 
+                                span.small_text__bold  328х288
+                            .line 
+                                span.small_text Размер пикселя
+                                span.small_text__bold  17мкм
+                            .line 
+                                span.small_text Чувствительность
+                                span.small_text__bold  30мК
+                            .line 
+                                span.small_text Дистанция обнаружения
+                                span.small_text__bold  2500м
+            .item 
+                .card
+                    .card-img 
+                        img(src="./img/items/2.png", alt="place for image")
+                    .card-content
+                        a(href="#")
+                            p.h3 BNV - PRO 
+                            p.h3.h3_subname night vision binocular
+                        p.small_text Оптична система (мм):
+                        .sizes_block 
+                            .size.active 25 
+                            .size 35 
+                            .size 50 
+                            .size 75 
+                        .characters-table 
+                            .line 
+                                span.small_text Разрешение 
+                                span.small_text__bold  328х288
+                            .line 
+                                span.small_text Размер пикселя
+                                span.small_text__bold  17мкм
+                            .line 
+                                span.small_text Чувствительность
+                                span.small_text__bold  30мК
+                            .line 
+                                span.small_text Дистанция обнаружения
+                                span.small_text__bold  2500м
+
+.grey-bg 
+    .container
+        .consulting
+            .part-text 
+                h2.h2 Заявка 
+                    span на консультацію
+                p.normal_text-gray Бажаєте дізнатися більше? Залишіть свій номер телефону і наш менеджер у найкоротші терміни із задоволенням зв'яжеться з вами
+            .form-part
+                form(id='contact-form' onsubmit='return validateForm(event)')
+                    .form-group
+                        label(for='phone') Номер телефону:
+                        input(type='tel', id='phone', name='phone', placeholder='Введіть номер телефону', pattern='[0-9]{10}', required)
+                        span.error-message(id='phone-error') Невірний номер
+                    .form-group
+                        label(for='message') Повідомлення:
+                        textarea(id='message', name='message', placeholder='Введіть повідомлення', required)
+                        span.error-message(id='message-error') Поле обовєязкове
+                    button.button(type='submit') Надіслати
+                    
+.popup(id='success-popup')
+    .popup-content
+        span.close-popup(id='close-popup') ×
+        p Ваше повідомлення надіслано! 

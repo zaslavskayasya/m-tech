@@ -22,7 +22,9 @@ body {
 .three-row {
   display: flex;
   justify-content: space-between;
-  .row{
+  flex-flow: wrap;
+
+  .row, .item{
     width: 33.3%
   }
 }
@@ -386,7 +388,7 @@ body {
 .grey-bg {
   background-color: #F5F5F5;
   padding: 80px 0px;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
 }
 
 
@@ -477,7 +479,7 @@ body {
   .three-row{
     flex-direction: column;
     align-items: center;
-    .row{
+    .row, .item{
       width: 100%;
     }
   }

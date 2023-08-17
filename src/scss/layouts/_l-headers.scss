@@ -1,0 +1,58 @@
+
+.tiny-header{
+    height: 508px;
+    position: relative;
+    background-size: cover;
+    padding-top: 160px;
+    // filter: blur(5px);
+    .overlay{
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0px;
+        pointer-events: none;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
+ul.breadcrumb {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.50);
+    display: flex;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+  ul.breadcrumb li a:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/icons/arr-bread.svg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 11px;
+  }
+  ul.breadcrumb li a {
+    color: rgba(255, 255, 255, 0.50);
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: rgba(255, 255, 255, 0.50);
+    text-decoration: underline;
+  }

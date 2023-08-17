@@ -16,7 +16,7 @@ main.l-main
         .popular
             h2.h2 Популярні товари
             .three-row 
-                .row
+                .item
                     .card 
                         .card-img 
                             img(src="./img/items/1.png", alt="place for image")
@@ -43,7 +43,7 @@ main.l-main
                                 .line 
                                     span.small_text Дистанция обнаружения
                                     span.small_text__bold  2500м
-                .row
+                .item
                     .card 
                         .card-img 
                             img(src="./img/items/1.png", alt="place for image")
@@ -70,7 +70,7 @@ main.l-main
                                 .line 
                                     span.small_text Дистанция обнаружения
                                     span.small_text__bold  2500м
-                .row
+                .item
                     .card 
                         .card-img 
                             img(src="./img/items/2.png", alt="place for image")
@@ -187,31 +187,32 @@ main.l-main
                         span.error-message(id='message-error') Поле обовєязкове
                     button.button(type='submit') Надіслати
 .container
-    h2.h2 Наша галерея
-    .gallery-block
-        .left-gallery
-            .nav-block
-                .custom-prev-button.custom-nav
-                    img(src="./img/icons/arr-left.svg", alt="")
-                .custom-next-button.custom-nav 
-                    img(src="./img/icons/arr-righ.svg", alt="") 
-            .slider-left
-                .slider 
-                    .wrap-main-img 
-                        img(src="./img/illustration/illustration.png", alt="") 
-                .slider 
-                    .wrap-main-img 
-                        img(src="./img/illustration/illustration.png", alt="") 
-        .right-gallery 
-            .video-gallery
-                .video 
-                    .video-wrap
-                        iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
-                    a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
-                .video 
-                    .video-wrap
-                        iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
-                    a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
+    .gallery-wrap
+        h2.h2 Наша галерея
+        .gallery-block
+            .left-gallery
+                .nav-block
+                    .custom-prev-button.custom-nav
+                        img(src="./img/icons/arr-left.svg", alt="")
+                    .custom-next-button.custom-nav 
+                        img(src="./img/icons/arr-righ.svg", alt="") 
+                .slider-left
+                    .slider 
+                        .wrap-main-img 
+                            img(src="./img/illustration/illustration.png", alt="") 
+                    .slider 
+                        .wrap-main-img 
+                            img(src="./img/illustration/illustration.png", alt="") 
+            .right-gallery 
+                .video-gallery
+                    .video 
+                        .video-wrap
+                            iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+                        a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
+                    .video 
+                        .video-wrap
+                            iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+                        a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
 
 .container 
     .last-news 
