@@ -1,9 +1,10 @@
 
 .tiny-header{
-    height: 508px;
+    min-height: 508px;
     position: relative;
     background-size: cover;
     padding-top: 160px;
+    padding-bottom: 50px;;
     // filter: blur(5px);
     .overlay{
         background-color: rgba(0,0,0,0.8);
@@ -25,6 +26,7 @@ ul.breadcrumb {
     list-style: none;
     color: rgba(255, 255, 255, 0.50);
     display: flex;
+    flex-flow: wrap;
   }
   ul.breadcrumb li {
     display: inline;
@@ -36,6 +38,7 @@ ul.breadcrumb {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 10px;;
 
   }
   ul.breadcrumb li a:after {
@@ -56,3 +59,16 @@ ul.breadcrumb {
     color: rgba(255, 255, 255, 0.50);
     text-decoration: underline;
   }
+
+
+
+
+
+@media screen and (max-width: 960px){
+    .gallery-wrap, .tiny-header {
+        padding-top: 140px;
+    }
+    .tiny-header{
+        min-height: 408px;
+    }
+}
