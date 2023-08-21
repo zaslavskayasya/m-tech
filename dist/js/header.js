@@ -37,4 +37,35 @@ dropsBtns.forEach((item) => {
   });
 });
 
+
+
+class Employee {
+    salary = 1200;
+    static bonus = 300;
+    constructor(position){
+        this.position = position;
+    }
+    getSallary(){
+        return this.salary;
+    }
+    static getBonus(){
+        return this.bonus;
+    }
+}
+
+const employee = new Employee("developer");
+
+
+employee.bonus;
+
+
+function Example({someProp}) {
+    function doSomething(){
+        console.log(someProp);
+    }
+
+    useEffect(()=>{
+        doSomething();
+    }, [])
+}
 //# sourceMappingURL=header.js.map
