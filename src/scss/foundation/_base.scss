@@ -10,11 +10,12 @@ body {
   font-size: h.rem(16);
   color: h.$primary-color;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container{
   max-width: 1255px;
-  padding: 0 13px 0px 15px;
+  padding: 0 13px 0px 23px;
   margin: 0 auto;
 }
 

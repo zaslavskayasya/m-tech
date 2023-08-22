@@ -36,6 +36,18 @@ h2, .h2{
   margin-bottom: 35px;
 }
 
+
+// one header 
+.heading{
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 39px */
+  text-transform: uppercase;
+}
+
+
 //subheader
 h3, .h3 , .h3_subname {
   color:  c.$primary-color;
@@ -45,15 +57,14 @@ h3, .h3 , .h3_subname {
   letter-spacing: inherit;
 }
 
-
-
 p, .p{
   font-variant-numeric: stacked-fractions;
   font-feature-settings: 'hlig' on, 'dlig' on;
   font-size: 16px;
   font-weight: 500;
-  line-height: 151.278%; /* 24.205px */
+  line-height: 158.278%;
   letter-spacing: 0.16px;
+  // margin-bottom: 25px;;
 }
 
 .normal_text-gray{
@@ -93,6 +104,10 @@ p, .p{
   }
 }
 
+.UPPER{
+  text-transform: uppercase;
+
+}
 
 
 @media screen and(max-width: 1300px){
