@@ -70,12 +70,12 @@
 .container 
         .tabs-part
             .tabs-wrap
-                button.tab-btn.active(data-tab="tab-1") Опис
-                button.tab-btn(data-tab="tab-2") Специфікація
-                button.tab-btn(data-tab="tab-3") Аксесуари
-                button.tab-btn(data-tab="tab-4") Відеогалерея
-                button.tab-btn(data-tab="tab-5") Схожі товари
-            .content-wrap
+                a(href="#description").tab-btn.active(data-tab="tab-1") Опис
+                a(href="#sertificate").tab-btn(data-tab="tab-2") Специфікація
+                a(href="#sccess").tab-btn(data-tab="tab-3") Аксесуари
+                a(href="#gallery").tab-btn(data-tab="tab-4") Відеогалерея
+                a(href="#same").tab-btn(data-tab="tab-5") Схожі товари
+            .content-wrap#description
                 .content-item#tab-1.active
                     .big-text 
                         | ЩО 
@@ -86,14 +86,14 @@
                             | Лінійка тепловізійних монокулярів EVO-SHOT-S представлена з обʼєктивами F25мм, F35мм, F50мм та F75мм, що дозволяють оператору використовувати пристрій як компактний кишеньковий монокуляр, так і як інструмент спо-стереження на великі відстані.
                         p.normal_text 
                             | Вбудований відеорекордер дозволить вам зафіксувати потрібні моменти, а за до-помогою модулю Wi-Fi ви можете підʼєднати до монокуляра ваш смартфон або планшет та вести спостереження з екрану гаджета.
-                .content-item#tab-2 
-                    p content 2
-                .content-item#tab-3 
-                    p content 3
-                .content-item#tab-4 
-                    p content 4
-                .content-item#tab-5
-                    p content 5
+                //- .content-item#tab-2 
+                //-     p content 2
+                //- .content-item#tab-3 
+                //-     p content 3
+                //- .content-item#tab-4 
+                //-     p content 4
+                //- .content-item#tab-5
+                //-     p content 5
 .mega-image(style="background-image: url('./img/illustration/illustration2.png')") 
 
 .container 
@@ -103,7 +103,7 @@
         p.normal_text Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту. Програмне забезпечення монокуляра дозволяє вести спостереження у різноманітних умовах за допомогою восьми кольорових режимів. Режим «вогонь» зручний для пошуково-рятувальних робіт, при якому на монохромному фоні теплові обʼєкти виділені яскравим помаранчевим кольором.
         p.normal_text Дисплей з технологією OLED HD 1024×768 забезпечує надійну роботу приладу при температурах від - 25 до +50 градусів. Такі характеристики дозволяють домогтися стабільної роботи приладу навіть в тяжких умовах роботи, отримувати хорошу деталізацію зображення та фіксувати теплові обʼєкти на фото та відео.
 
-    .specification 
+    .specification#sertificate 
         h2.h2 Специфікація
         p.normal_text-heading виБИРАючи EVO-SHOTS-S , Враховуй:
         .char-block 
@@ -236,11 +236,12 @@
                         li Літієва батарея CR123A -1шт.
                         li Інструкція з експлуатації -1шт.
                         li М’який чохол -1шт.
-.accesoires 
+.accesoires#sccess 
     .btn-wrap
         .prev-btn 
         .next-btn  
     .container
+        h2.h2 Аксесуари
         .sccess-slider 
             .slide 
                 .img-wrap 
@@ -274,24 +275,18 @@
                 h3.h3 thermal imaging monocular 
 
 .container
-    .gallery-wrap
-        h2.h2 Наша галерея
-        .gallery-block.videogallery
-            .left-gallery
-                .nav-block
-                    .custom-prev-button.custom-nav
-                        img(src="./img/icons/arr-left.svg", alt="")
-                    .custom-next-button.custom-nav 
-                        img(src="./img/icons/arr-righ.svg", alt="") 
-                .slider-left
-                    .slider 
-                        .video-wrap
-                            iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
-                        a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
-                    .slider 
-                        .video-wrap
-                            iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
-            .right-gallery 
+    .gallery-wrap#gallery
+        .header-line
+            h2.h2 Наша галерея
+            a(href="#").more-btn 
+                span Дивитись всі відео
+                img(src="./img/icons/precision2.svg", alt="")
+        .videogallery
+            .video-left
+                .left-wrap 
+                    iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+                a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
+            .video-right
                 .video-gallery
                     .video 
                         .video-wrap
@@ -302,9 +297,8 @@
                             iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
                         a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
 
-
 .container 
-    .popular
+    .popular#same
         .h2 Ви переглядали
         .three-row 
             .item

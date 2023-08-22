@@ -149,32 +149,14 @@
     </div>
     <div class="container">
       <div class="tabs-part">
-        <div class="tabs-wrap">
-          <button class="tab-btn active" data-tab="tab-1">Опис</button>
-          <button class="tab-btn" data-tab="tab-2">Специфікація</button>
-          <button class="tab-btn" data-tab="tab-3">Аксесуари</button>
-          <button class="tab-btn" data-tab="tab-4">Відеогалерея</button>
-          <button class="tab-btn" data-tab="tab-5">Схожі товари</button>
-        </div>
-        <div class="content-wrap">
+        <div class="tabs-wrap"><a class="tab-btn active" href="#description" data-tab="tab-1">Опис</a><a class="tab-btn" href="#sertificate" data-tab="tab-2">Специфікація</a><a class="tab-btn" href="#sccess" data-tab="tab-3">Аксесуари</a><a class="tab-btn" href="#gallery" data-tab="tab-4">Відеогалерея</a><a class="tab-btn" href="#same" data-tab="tab-5">Схожі товари</a></div>
+        <div class="content-wrap" id="description">
           <div class="content-item active" id="tab-1">
             <div class="big-text"> ЩО <span class="accent">ВАРТО ЗНАТИ, <br></span>ПРО EVO-SHOTS-S </div>
             <div class="inform-part">
               <p class="normal_text"> Лінійка тепловізійних монокулярів EVO-SHOT-S представлена з обʼєктивами F25мм, F35мм, F50мм та F75мм, що дозволяють оператору використовувати пристрій як компактний кишеньковий монокуляр, так і як інструмент спо-стереження на великі відстані.</p>
               <p class="normal_text"> Вбудований відеорекордер дозволить вам зафіксувати потрібні моменти, а за до-помогою модулю Wi-Fi ви можете підʼєднати до монокуляра ваш смартфон або планшет та вести спостереження з екрану гаджета.</p>
             </div>
-          </div>
-          <div class="content-item" id="tab-2">
-            <p>content 2</p>
-          </div>
-          <div class="content-item" id="tab-3">
-            <p>content 3</p>
-          </div>
-          <div class="content-item" id="tab-4">
-            <p>content 4</p>
-          </div>
-          <div class="content-item" id="tab-5">
-            <p>content 5</p>
           </div>
         </div>
       </div>
@@ -187,7 +169,7 @@
         <p class="normal_text">Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту. Програмне забезпечення монокуляра дозволяє вести спостереження у різноманітних умовах за допомогою восьми кольорових режимів. Режим «вогонь» зручний для пошуково-рятувальних робіт, при якому на монохромному фоні теплові обʼєкти виділені яскравим помаранчевим кольором.</p>
         <p class="normal_text">Дисплей з технологією OLED HD 1024×768 забезпечує надійну роботу приладу при температурах від - 25 до +50 градусів. Такі характеристики дозволяють домогтися стабільної роботи приладу навіть в тяжких умовах роботи, отримувати хорошу деталізацію зображення та фіксувати теплові обʼєкти на фото та відео.</p>
       </div>
-      <div class="specification">
+      <div class="specification" id="sertificate">
         <h2 class="h2">Специфікація</h2>
         <p class="normal_text-heading">виБИРАючи EVO-SHOTS-S , Враховуй:</p>
         <div class="char-block">
@@ -394,12 +376,13 @@
         </div>
       </div>
     </div>
-    <div class="accesoires">
+    <div class="accesoires" id="sccess">
       <div class="btn-wrap">
         <div class="prev-btn"> </div>
         <div class="next-btn"> </div>
       </div>
       <div class="container">
+        <h2 class="h2">Аксесуари</h2>
         <div class="sccess-slider">
           <div class="slide">
             <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
@@ -435,28 +418,17 @@
       </div>
     </div>
     <div class="container">
-      <div class="gallery-wrap">
-        <h2 class="h2">Наша галерея</h2>
-        <div class="gallery-block videogallery">
-          <div class="left-gallery">
-            <div class="nav-block">
-              <div class="custom-prev-button custom-nav"><img src="./img/icons/arr-left.svg" alt=""></div>
-              <div class="custom-next-button custom-nav"> <img src="./img/icons/arr-righ.svg" alt=""></div>
-            </div>
-            <div class="slider-left">
-              <div class="slider">
-                <div class="video-wrap">
-                  <iframe src="https://www.youtube.com/embed/CF5Skk1_3bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-                </div><a class="video-description" href="#"> Pulsar приносить кардинальні новини на IWA OutdoorClassics</a>
-              </div>
-              <div class="slider">
-                <div class="video-wrap">
-                  <iframe src="https://www.youtube.com/embed/CF5Skk1_3bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-                </div>
-              </div>
-            </div>
+      <div class="gallery-wrap" id="gallery">
+        <div class="header-line">
+          <h2 class="h2">Наша галерея</h2><a class="more-btn" href="#"> <span>Дивитись всі відео</span><img src="./img/icons/precision2.svg" alt=""></a>
+        </div>
+        <div class="videogallery">
+          <div class="video-left">
+            <div class="left-wrap">
+              <iframe src="https://www.youtube.com/embed/CF5Skk1_3bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div><a class="video-description" href="#"> Pulsar приносить кардинальні новини на IWA OutdoorClassics</a>
           </div>
-          <div class="right-gallery">
+          <div class="video-right">
             <div class="video-gallery">
               <div class="video">
                 <div class="video-wrap">
@@ -474,7 +446,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="popular">
+      <div class="popular" id="same">
         <div class="h2">Ви переглядали</div>
         <div class="three-row">
           <div class="item">

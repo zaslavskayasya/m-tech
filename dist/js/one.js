@@ -70,62 +70,45 @@ let contentList = document.querySelectorAll('.content-item');
 
 console.log(tabButtons);
 
+$(document).ready(function(){
+    $(".tabs-wrap > a[href*='#']").on("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top -10
+      }, 777);
+      e.preventDefault();
+      return false;
+    });
+  });
+
 
 // tabButtons.addEventListener('click', (el)=>{
 //         console.log('click');
 // })
 
-tabButtons.forEach((el)=>{
+// tabButtons.forEach((el)=>{
 
-    el.addEventListener('click', ()=>{
+//     el.addEventListener('click', ()=>{
 
-        tabButtons.forEach((e)=>{
-            e.classList.remove('active');
-        })
+//         tabButtons.forEach((e)=>{
+//             e.classList.remove('active');
+//         })
 
-        el.classList.add('active');
+//         el.classList.add('active');
 
-        let activateTab = el.dataset.tab;
-        let activateEl = document.getElementById(activateTab);
+//         let activateTab = el.dataset.tab;
+//         let activateEl = document.getElementById(activateTab);
 
-        contentList.forEach((ar)=>{
-            ar.classList.remove('active');
-        })
+//         contentList.forEach((ar)=>{
+//             ar.classList.remove('active');
+//         })
 
-        activateEl.classList.add('active');
+//         activateEl.classList.add('active');
 
-        console.log(activateEl);        
+//         console.log(activateEl);        
 
-    });
+//     });
 
-})
+// })
 
-
-$('.slider-left').slick({
-    slidesToShow: 1,
-    // centerPadding: '70px',
-    // variableWidth: true,
-    dots: false,
-    arrows: false,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 1,
-          variableWidth: false,
-          centerMode: false,
-          dots: false
-
-        }
-      },
-    ]
-});
-$('.left-gallery > .custom-prev-button').click(function(){
-    $(' .slider-left').slick('slickPrev');
-  });
-
-  $('.custom-next-button').click(function(){
-    $('.left-gallery >  .slider-left').slick('slickNext');
-  });
 //# sourceMappingURL=one.js.map
