@@ -37,6 +37,12 @@ successSlider.slick({
   variableWidth: false,
   slidesToShow: 3,
   infinite: false,
+  responsive: [{
+    breakpoint: 920,
+    settings: {
+        slidesToShow: 1,
+      }
+  }]
 });
 
 $(".prev-btn").click(function () {

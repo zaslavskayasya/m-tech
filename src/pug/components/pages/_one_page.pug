@@ -75,7 +75,7 @@
                 a(href="#sccess").tab-btn(data-tab="tab-3") Аксесуари
                 a(href="#gallery").tab-btn(data-tab="tab-4") Відеогалерея
                 a(href="#same").tab-btn(data-tab="tab-5") Схожі товари
-            .content-wrap#description
+            .content-wrap.wrap-inform-texts#description
                 .content-item#tab-1.active
                     .big-text 
                         | ЩО 
@@ -97,7 +97,7 @@
 .mega-image(style="background-image: url('./img/illustration/illustration2.png')") 
 
 .container 
-    .additional-info 
+    .additional-info.wrap-inform-texts 
         p.normal_text Цей монокуляр розроблений на основі сучасного сенсора з робдільною здатністю 384х288 пікселів. Розмір пікселя - 12мкм.
         p.normal_text Тепловізійний монокуляр «EVO-SHOT-S» виконаний в ергономічному, ударостійкому корпусі із авіаційного алю-мінію, який стабільний при роботі в тяжких умовах та має клас захисту IP67.
         p.normal_text Використання стадіометрічного далекоміра дозволяє легко визначити дистанцію до обʼєкту. Програмне забезпечення монокуляра дозволяє вести спостереження у різноманітних умовах за допомогою восьми кольорових режимів. Режим «вогонь» зручний для пошуково-рятувальних робіт, при якому на монохромному фоні теплові обʼєкти виділені яскравим помаранчевим кольором.
@@ -278,7 +278,7 @@
     .gallery-wrap#gallery
         .header-line
             h2.h2 Відеогалерея
-            a(href="#").more-btn 
+            a(href="#").more-btn.only-desc 
                 span Дивитись всі відео
                 img(src="./img/icons/precision2.svg", alt="")
         .videogallery
@@ -296,7 +296,9 @@
                         .video-wrap
                             iframe( src='https://www.youtube.com/embed/CF5Skk1_3bk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
                         a(href="#").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
-
+        a(href="#").more-btn.only-mob 
+            span Дивитись всі відео
+            img(src="./img/icons/precision2.svg", alt="")
 .container 
     .popular#same
         .h2 Ви переглядали

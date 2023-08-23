@@ -456,7 +456,10 @@ body {
   .three-in-row-wrap .item{
     margin-right: 16px;
     width: 346px;
-}
+  }
+  .container{
+    padding: 0 15px 0 15px;
+  }
 }
 
 @media screen and (max-width: 1118px){
@@ -472,6 +475,12 @@ body {
   }
 }
 
+.only-desc{
+    display: flex;
+}
+.only-mob{
+  display: none
+}
 
 @media screen and (max-width: 768px){
   .container {
@@ -530,6 +539,12 @@ body {
   .last-news{
     margin-bottom: 100px;;
     padding-top: 40px;;
+  }
+  .only-desc{
+    display: none;
+  }
+  .only-mob{
+    display: flex
   }
 }
 
