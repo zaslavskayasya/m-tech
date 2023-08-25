@@ -48,6 +48,83 @@
 }
 
 
+.article-content{
+    padding: 100px 0px;
+    .article-image{
+        height: 700px;
+        width: 100%;
+        margin-bottom: 60px;
+        img, iframe{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.two-images{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    .image-part{
+        width: 49%;
+        height: 335px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
+
+
+.list {
+    list-style: none;
+    // padding-left: 15px;
+    padding: 30px 15px;
+    .list-li{
+        padding-left: 15px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .list-li:before{
+        content: "";  
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        display: block;
+        left: 3px;
+        top: 9px;
+        border-radius: 100%;;
+        background-color: h.$accent-color; 
+        font-weight: bold; 
+        display: inline-block; 
+        margin-left: -15px; 
+    }
+}
+
+.author-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    .author{
+        color:  #525252;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 28.8px */
+    }
+}
+
+.last-new{
+    padding: 80px 0px 180px;
+
+}
+
+
 @media screen and (max-width:980px){
     .news-illustration .normal-text{
         padding-left: 23%;
@@ -90,4 +167,34 @@
     .one-new {
         margin-bottom: 77px;
     }
+    .article-content .article-image{
+        height: 192px;
+    }
+
+    .article-content {
+        padding: 60px 0;
+        h2, .h2{
+            font-size: 25px;
+            margin-bottom: 27px;
+        }
+    }
+    .last-new{
+        h2, .h2{
+            font-size: 25px;
+            margin-bottom: 27px;
+        }
+    }
+    .two-images .image-part {
+        height: 192px;;
+    }
+    .two-images{
+        margin-bottom: 39px;
+    }
+    .author-line{
+        flex-direction: column;
+    }
+    .last-new {
+        padding: 0px 0 80px;
+    }
 }
+
