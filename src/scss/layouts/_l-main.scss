@@ -2,12 +2,65 @@
 
 
 .main-screen {
-    background-image: url(../img/illustration/main.png) ;
+    // background-image: url(../img/illustration/main.png) ;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    height: 1000px;
+    position: relative;
+    // height: 1000px;
 }
+
+#flesh {
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background: url('./../img/illustration/black.png') no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+  }
+  #bone{
+    width: 100%;
+    margin: 0;
+    mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40713/xray-machine.png');
+    mask-repeat: no-repeat;
+    mask-size: 150px;
+    cursor: none;
+  }
+
+.choose-buttons {
+    position: absolute;  
+    top: 30%;
+    z-index: 9999;
+    left: 60px;
+}
+
+.choose{
+    width: 100px;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.wrap-choose{
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+    cursor: pointer;
+    .img{
+        width: 84px;
+        height: 84px;
+        margin-right: 35px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 
 .l-main {
     padding-top: 180px;
@@ -230,6 +283,11 @@
 
 
 
+@media screen and(max-width: 1600px){
+    .menu a {
+        font-size: 13px;
+    }
+}
 
 @media screen and (max-width: 1300px){
     .main-page-block .down-block{
@@ -303,6 +361,7 @@
     .main-page-block .text-part .normal_text-gray{
         padding-left: 12px;
     }
+
 }
 
 @media screen and (max-width: 970px){
@@ -377,6 +436,16 @@
     .left-gallery{
       width: 61%;
     }
+    #bone, #flesh {
+        margin: 0;
+        width: auto;
+        height: 820px;
+        object-fit: cover;
+        background-size: cover;
+    }
+    #flesh {
+        height: 820px;
+    }
   }
   
   
@@ -404,6 +473,38 @@
     .video-wrap iframe {
       height: 400px;
       width: 100%;
+    }
+    .choose-buttons {
+        left: 60px;
+        position: absolute;
+        top: auto;
+        bottom: 19px;
+        z-index: 9999;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+        left: 0px;
+
+    }
+
+    .wrap-choose{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .choose{
+        max-width: 85px;
+
+        font-size: 12px;;
+        font-weight: 400;
+    }
+    .wrap-choose .img {
+        height: 56px;
+        width: 56px;
+        margin-bottom: 10px;
+        margin: 0 auto 10px;
     }
   
   }
@@ -488,5 +589,8 @@
     .video-wrap iframe {
         height: 400px;
         width: 100%;
-      }
+    }
+
+
+
 }
