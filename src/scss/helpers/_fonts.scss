@@ -39,7 +39,6 @@ h2, .h2{
 
 // one header 
 .heading{
-  font-family: Montserrat;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -47,6 +46,13 @@ h2, .h2{
   text-transform: uppercase;
 }
 
+.heading-thin{
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 39px */
+  text-transform: uppercase;
+}
 
 //subheader
 h3, .h3 , .h3_subname {
