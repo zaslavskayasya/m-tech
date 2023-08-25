@@ -1,0 +1,59 @@
+.tiny-header.slim(style="background-image: url('./img/illustration/illustration2.png')")
+    .overlay
+    .container
+        ul.breadcrumb
+            li
+                a(href="#") Головна
+            li
+                span Контакти
+        h1.h1  
+            | Контакти
+.container
+    .contacts-block 
+        .contacts-left
+            h2.h2 Як зв’язатись з нами?
+            p.normal_text Ми цінуємо ваші відгуки, запити та пропозиції. Якщо у вас виникли запитання чи сумніви щодо наших приладів нічного бачення, ми тут, щоб допомогти вам.
+            .contacts-place 
+                .line-cont 
+                    .icon
+                        img(src="./img/icons/location.svg", alt="location") 
+                    .cont-wrap
+                        p.contacts-name Наша адреса
+                        a(href="#").contacts-link м. Одеса вул. Космонавта Комарова 14
+                .line-cont 
+                    .icon
+                        img(src="./img/icons/calling.svg", alt="phone") 
+                    .cont-wrap
+                        p.contacts-name Номер телефону
+                        a(href="#").contacts-link +380 (99) 999-99-99
+                .line-cont 
+                    .icon
+                        img(src="./img/icons/mail.svg", alt="mail") 
+                    .cont-wrap
+                        p.contacts-name Email
+                        a(href="#").contacts-link mercurytechnology@gmail.com  
+        .contacts-right 
+            .form-part
+                form(id='contact-form' onsubmit='return validateForm(event)')
+                    .form-group
+                        label(for='name') Ваше ім’я
+                        input(type='text', id='name', name='phone', placeholder='введіть ваше ім’я',  required)
+                        span.error-message(id='name-error') 
+                    .form-group
+                        label(for='mail') Email
+                        input(type='e-mail', id='mail', name='phone', placeholder='Введіть вашй Email',  required)
+                        span.error-message(id='mail-error') 
+                    .form-group
+                        label(for='phone') Номер телефону:
+                        input(type='tel', id='phone', name='phone', placeholder='Введіть номер телефону', pattern='[0-9]{10}', required)
+                        span.error-message(id='phone-error') Невірний номер
+                    .form-group
+                        label(for='message') Повідомлення:
+                        textarea(id='message', name='message', placeholder='Введіть повідомлення', required)
+                        span.error-message(id='message-error') Поле обовєязкове
+                    button.button(type='submit') Надіслати
+
+.popup(id='success-popup')
+    .popup-content
+        span.close-popup(id='close-popup') ×
+        p Ваше повідомлення надіслано! 
