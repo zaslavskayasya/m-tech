@@ -64,25 +64,30 @@ $(document).ready(function(){
 });
 
 
-var currentMousePos = { x: -1, y: -1 };
 
-$('#flesh').mousemove(function(e) {
+
+
+
+let currentMousePos = { x: 100, y: 450 };
+$('#circle').css('-webkit-mask-position-x', currentMousePos.x );
+$('#circle').css('-webkit-mask-position-y', currentMousePos.y)
+
+$('#scene').mousemove(function(e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
   
-  $('#bone').css('-webkit-mask-position-x', currentMousePos.x - 75);
-  $('#bone').css('-webkit-mask-position-y', currentMousePos.y - 75)
+  $('#circle').css('-webkit-mask-position-x', currentMousePos.x - 75);
+  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 75)
 });
-
 
 
 $("#teplo").click(function() {
   // Змінюємо атрибут 'src' на нове посилання на зображення
-  $("#bone").attr("src", "./img/illustration/base2.png");
+  $("#circle").attr("src", "./img/illustration/base2.png");
 });
 
 $("#night").click(function() {
   // Змінюємо атрибут 'src' на нове посилання на зображення
-  $("#bone").attr("src", "./img/illustration/base1.png");
+  $("#circle").attr("src", "./img/illustration/base1.png");
 });
 //# sourceMappingURL=main.js.map

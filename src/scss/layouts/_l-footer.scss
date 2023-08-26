@@ -94,6 +94,16 @@
     }
 
 }
+.mart {
+    a{
+        transition: all ease 0.3s;
+    }
+    a:hover{
+        color: h.$accent-color
+    }
+}
+
+
 
 
 @media screen and (max-width: 1010px){

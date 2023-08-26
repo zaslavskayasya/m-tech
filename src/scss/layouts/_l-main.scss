@@ -10,7 +10,7 @@
     // height: 1000px;
 }
 
-#flesh {
+#scene {
     position: relative;
     margin: 0;
     height: auto;
@@ -19,14 +19,14 @@
     background-size: 100% auto;
     z-index: 2;
   }
-  #bone{
+#circle{
     width: 100%;
     margin: 0;
     mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40713/xray-machine.png');
     mask-repeat: no-repeat;
     mask-size: 150px;
     cursor: none;
-  }
+}
 
 .choose-buttons {
     position: absolute;  
@@ -436,14 +436,14 @@
     .left-gallery{
       width: 61%;
     }
-    #bone, #flesh {
+    #circle, #scene {
         margin: 0;
         width: auto;
         height: 820px;
         object-fit: cover;
         background-size: cover;
     }
-    #flesh {
+    #scene {
         height: 820px;
     }
   }
@@ -589,6 +589,9 @@
     .video-wrap iframe {
         height: 400px;
         width: 100%;
+    }
+    #scene {
+        height: 100vh;
     }
 
 

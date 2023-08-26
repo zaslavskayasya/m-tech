@@ -54,11 +54,22 @@ $(".next-btn").click(function () {
 });
 
 
-$(".zoom-images img").each((idx, el) => {
-    $(el).ezPlus({
 
+if (window.matchMedia("(max-width: 780px)").matches) {
+  $(".zoom-images img").each((idx, el) => {
+    $(el).ezPlus({
+      zoomWindowPosition: 6
     });
-});
+  });
+} else {
+  $(".zoom-images img").each((idx, el) => {
+      $(el).ezPlus({
+        zoomWindowPosition: 2
+      });
+  });
+  /* the viewport is more than 500 pixels wide */
+}
+
 
 // $('#zoom_01').ezPlus({
 //     lenszoom: true,
