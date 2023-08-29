@@ -3,29 +3,41 @@
 
 .main-screen {
     // background-image: url(../img/illustration/main.png) ;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
     // height: 1000px;
+    // background-size: 100% auto;
 }
 
 #scene {
     position: relative;
     margin: 0;
-    height: auto;
-    width: 100%;
-    background: url('./../img/illustration/black.png') no-repeat;
-    background-size: 100% auto;
+    height: 100%;
+    background: url('./../img/illustration/black.png');
+    // background-size: 100% auto;
     z-index: 2;
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
+
 #circle{
     width: 100%;
     margin: 0;
-    mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40713/xray-machine.png');
+    mask-image: url('./../img/illustration/cross.png');
     mask-repeat: no-repeat;
-    mask-size: 150px;
-    cursor: none;
+    mask-size: 250px;
+    cursor: url('./../img/illustration/cross2.png'), pointer;
+    background-size: cover;
+    &:after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        display: block;
+        background: url('./../img/illustration/cross2.png');;
+    }
 }
 
 .choose-buttons {
@@ -58,6 +70,9 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+    &:hover{
+
     }
 }
 

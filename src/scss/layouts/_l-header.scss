@@ -168,10 +168,17 @@ header.open .overlay-header{
         &::before {
             background-color: h.$accent-color;
         }
+
     }
     &:hover, 
     &.active{
        color:  h.$accent-color;
+       &:before{
+            transform: translateY(-50%) rotate(0deg);
+        }
+        .sub-menu{
+            opacity: 1;
+        }
     }  
 
     &.open {
@@ -201,6 +208,7 @@ header.open .overlay-header{
 .menu-item-has-children.dropup.active .sub-menu a , 
 .menu li:hover .sub-menu a {
     color: #fff;
+    
 }
 
 .menu-item-has-children.dropup.active .sub-menu li.active a,
@@ -216,16 +224,20 @@ header.open .overlay-header{
 }
 
 
-
-
-.menu-item-has-children.open{
+// .menu-item-has-children.open{
+//     .sub-menu {
+//         display: block;
+//         opacity: 1;     
+//         pointer-events: all;   
+//  }
+// }
+.dropup:hover{
     .sub-menu {
         display: block;
         opacity: 1;     
         pointer-events: all;   
  }
 }
-
 /* The container <div> - needed to position the dropup content */
 .dropup {
   position: relative;

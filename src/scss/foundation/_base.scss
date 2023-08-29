@@ -48,11 +48,11 @@ body {
   .card-content{
     padding-left: 16px;
     padding-top: 5px;
-    a{
+    a.header-card{
       transition: all ease 0.3s;
       display: block;
     }
-    a:hover {
+    a.header-card:hover {
       text-decoration: underline;
     }
   }
@@ -88,10 +88,14 @@ body {
     justify-content: center;
     margin-right: 14px;
     transition: all ease 0.3s;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    line-height: 52px;
+    text-decoration: none;
+    
     &:hover, &.active{
       color: #fff;
       background-color: h.$accent-color ;
+      text-decoration: none;
     }
   }
 }
@@ -169,7 +173,7 @@ body {
 
 .nav-block{
   position: absolute;
-  top: 744px;
+  top: 745px;
   right: 24px;
   display: flex;
 
