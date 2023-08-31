@@ -31,10 +31,13 @@
     mask-size: 250px;
     cursor: url('./../img/illustration/cross2.png'), pointer;
     background-size: cover;
+    position: relative;
     &:after{
         content: "";
         width: 50px;
         height: 50px;
+        position: absolute;
+        top:0;
         display: block;
         background: url('./../img/illustration/cross2.png');;
     }
