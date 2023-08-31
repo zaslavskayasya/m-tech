@@ -171,6 +171,15 @@
     align-items: center;
     justify-content: center;
     height: 117px;
+    img{
+        opacity: 0.8;
+        transition: all ease 0.3s;
+    }
+    &:hover{
+        img{
+            opacity: 1;
+        }
+    }
 
 }
 

@@ -1,5 +1,9 @@
 @use '../helpers' as h;
 
+// body *:not(.slick-track):not(.slick-list){
+//   transition: initial;
+// }
+
 html {
   font-size: 100%;
 }
@@ -149,7 +153,13 @@ body {
   }
 }
 
+// .new-slider.slick-slider, 
+// .slick-list {
+//   transition: initial;
+// }
+
 .slick-slider {
+  // transition: initial;
   text-align: center; /* Центрування тексту для блока */
 }
 
@@ -162,19 +172,21 @@ body {
 }
 
 .slick-center .slick-slide {
+  transition: all ease 0.3s;
   // transform: scale(1.2); /* Збільшити центральний слайд */
   width: 1255px!important;
   transition: transform 0.3s ease; /* Плавний перехід масштабу */
-}
-.slick-current.slick-center{
   margin: 17px 31px 20px 59px;
-  width: 1207px!important;
+}
+.slick-current{
+  // width: 1207px!important;
+  // transition: initial;
 }
 
 .nav-block{
   position: absolute;
-  top: 745px;
-  right: 24px;
+  right: 0px;
+  top: 748px;
   display: flex;
 
 }
@@ -183,7 +195,7 @@ body {
   z-index:2!important;
   width:40px!important;
   height:40px!important;  
-  transition: all ease 0.3s;
+  // transition: all ease 0.3s;
   // color: red;
   background-color: #F5F5F5;
   z-index: 99;
@@ -267,15 +279,18 @@ body {
 
   }
 }
-.slick-track{ 
-  transition: transform 1s; 
-} 
+
+// .slick-track{ 
+//   transition: all ease 0.3s;
+// } 
+
 .slick-slide{ 
-  transition: width .3s; 
+  transition: all .3s; 
 }
 
 .slick-dots{
-  display: flex;
+  display: block;
+  padding-left: 30px;;
   justify-content: flex-start;
   width: 1200px;
   margin: 0 auto;

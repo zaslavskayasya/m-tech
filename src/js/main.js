@@ -1,15 +1,22 @@
 console.log(`Loaded main.js`);
 
 
+
+
 $(document).ready(function(){
+
+
     $('.new-slider').slick({
         centerMode: true,
         slidesToShow: 1,
-        // centerPadding: '70px',
+        slidesToScroll: 1,
+        // // centerPadding: '70px',
         variableWidth: true,
-        dots: true,
-        arrows: false,
+        speed: 500,
+        useTransform: true,
+        cssEase: 'ease-out',
         infinite: true,
+        dots: true,
         responsive: [
           {
             breakpoint: 1300,
@@ -18,7 +25,6 @@ $(document).ready(function(){
               variableWidth: false,
               centerMode: false,
               dots: false
-
             }
           },
         ]
@@ -39,6 +45,7 @@ $(document).ready(function(){
         variableWidth: true,
         dots: false,
         arrows: false,
+        infinite: true,
         responsive: [
           {
             breakpoint: 1300,
