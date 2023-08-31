@@ -300,19 +300,26 @@ body {
 }
 
 .slick-dots{
-  display: block;
-  padding-left: 30px;;
+  display: flex;
   justify-content: flex-start;
-  width: 1200px;
   margin: 0 auto;
+  padding-left: 0;
+  position: relative;
+  width: 1260px;
+  justify-content: flex-start;
   li{
     width: 172px;
     height: 3px;
     color: #000;
     font-size: 0px;
+    margin: 0px;;
+
     background-color: #ccc;
     cursor: pointer;
     &.slick-active{
+      background-color: #181717;
+    }
+    &:hover{
       background-color: #181717;
     }
   }

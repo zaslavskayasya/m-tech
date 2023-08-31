@@ -97,4 +97,15 @@ $("#night").click(function() {
   // Змінюємо атрибут 'src' на нове посилання на зображення
   $("#circle").attr("src", "./img/illustration/base1.png");
 });
+
+
+let menuBtn = document.querySelector('.menu-item-has-children');
+
+
+if(window.innerWidth < 900){
+  menuBtn.querySelector('a').addEventListener('click',(e) =>{
+    // console.log(this)
+      e.preventDefault();
+  } )
+}
 //# sourceMappingURL=main.js.map
