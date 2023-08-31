@@ -191,8 +191,19 @@ header.open .overlay-header{
 
 }
 
+.sub-menu {
+    display: flex;
+    margin-bottom: 20px;;
+}
+
+.sub-menu .row{
+    width: 250px;
+}
+
+
 .menu li{
     transition: all ease 0.3s;;
+    z-index: 999;
 }
 
 .menu li.active {
@@ -233,7 +244,7 @@ header.open .overlay-header{
 // }
 .dropup:hover{
     .sub-menu {
-        display: block;
+        display: flex;
         opacity: 1;     
         pointer-events: all;   
  }
@@ -250,6 +261,7 @@ header.open .overlay-header{
     opacity: 0;
     transition: all ease 0.3s;;
     pointer-events: none;;
+    display: flex;
   position: absolute;
   top:10px;
   padding-top: 20px;
@@ -284,7 +296,7 @@ header.open .overlay-header{
 @media screen and (max-width: 1520px){
     .menu-item-has-children.open{
         .sub-menu {
-            display: block;
+            display: flex;
             opacity: 1;        
         }
     }
@@ -430,7 +442,7 @@ header.open .overlay-header{
     .dropup.open{
         margin-bottom: 20px;
         .sub-menu{
-            display: block;    
+            display: flex;    
             opacity: 1;
             
             width: auto;      
@@ -468,6 +480,10 @@ header.open .overlay-header{
     .hide-in-adaptive{
         display: none;
     } 
+    .sub-menu{
+        flex-direction: column;
+    }
+
 }
 
 

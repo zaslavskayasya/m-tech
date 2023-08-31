@@ -83,8 +83,8 @@ $('#scene').mousemove(function(e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
   
-  $('#circle').css('-webkit-mask-position-x', currentMousePos.x - 90 );
-  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 90 )
+  $('#circle').css('-webkit-mask-position-x', currentMousePos.x - 100 );
+  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 100 )
 });
 
 
