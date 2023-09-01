@@ -9,7 +9,7 @@
   display: flex;;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 49px ;
+  padding: 0px 49px 29px 49px ;
   position: relative;
   margin-bottom: 7px;
   position: absolute;
@@ -20,6 +20,7 @@
     top: 28px;
     width: 292px;
     height: 68px;
+    padding-top: 21px;
     img{
         display: block;
         width: 100%;
@@ -55,6 +56,7 @@ header.open .overlay-header{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    // padding-top: 29px;
     li{ 
         margin-right: 80px;
     }
@@ -65,9 +67,11 @@ header.open .overlay-header{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 10px;
+
   .menu.center-nemu{
-    align-self: center;
-    display: flex;
+      align-self: center;
+      display: flex;
     
   }
 }
@@ -78,6 +82,7 @@ header.open .overlay-header{
   align-items: center;  
   list-style-type: none;
   transition: all ease 0.3s;
+  padding-top: 29px;
 //   margin-left: 24px;;
     li{
         &:not(:last-child) {
@@ -354,7 +359,7 @@ header.open .overlay-header{
     .for-mobile{
             justify-content: flex-start;
             align-items: flex-start;
-            padding-top: 140px;
+            padding-top: 100px;
         }
         .menu{
             text-align: left;;
@@ -395,6 +400,9 @@ header.open .overlay-header{
     }
     .menu li .dropbtn {
         margin-right: 0px;
+    }
+    .header .logo{
+        padding-top: 0px;
     }
         
 }
