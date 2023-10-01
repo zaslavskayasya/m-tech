@@ -72,6 +72,10 @@
     h2{
         margin: 40px auto 20px;
     }
+    h3, h4{
+        width: 82.5%;
+        margin: 30px auto 20px;
+    }
     p, h2 {
         width: 82.5%;
     }
@@ -144,7 +148,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-    .image-part{
+    .image-part, div{
         width: 49%;
         height: 335px;
         img{
@@ -287,6 +291,10 @@
         }
         h2{
             margin: 30px auto 15px;
+        }
+        h3, h4 {
+            margin: 30px auto 15px;
+            width: 100%;
         }
         p, h2 {
             width: 100%;
