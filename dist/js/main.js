@@ -73,9 +73,7 @@ $(document).ready(function(){
 
 
 
-
-
-let currentMousePos = { x: 100, y: 450 };
+let currentMousePos = { x: 600, y: 450 };
 $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
 $('#circle').css('-webkit-mask-position-y', currentMousePos.y)
 
@@ -99,10 +97,15 @@ $("#night").click(function() {
 });
 
 
+
 let menuBtn = document.querySelector('.menu-item-has-children');
 
-
 if(window.innerWidth < 900){
+  console.log("less then")
+
+  currentMousePos = { x: 60, y: 150 };
+  $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
+  $('#circle').css('-webkit-mask-position-y', currentMousePos.y)
   menuBtn.querySelector('a').addEventListener('click',(e) =>{
     // console.log(this)
       e.preventDefault();

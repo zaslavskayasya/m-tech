@@ -472,12 +472,12 @@
     #circle, #scene {
         margin: 0;
         width: auto;
-        height: 820px;
+        height: 774px;
         object-fit: cover;
         background-size: cover;
     }
     #scene {
-        height: 820px;
+        height: 774px;
     }
   }
   
@@ -623,8 +623,8 @@
         height: 400px;
         width: 100%;
     }
-    #scene {
-        height: 100vh;
+    #circle, #scene {
+        height: 500px;
     }
 
 
