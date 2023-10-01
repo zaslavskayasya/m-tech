@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 
 
-let currentMousePos = { x: 600, y: 450 };
+let currentMousePos = { x: 50, y: 250 };
 $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
 $('#circle').css('-webkit-mask-position-y', currentMousePos.y)
 
@@ -103,9 +103,9 @@ let menuBtn = document.querySelector('.menu-item-has-children');
 if(window.innerWidth < 900){
   console.log("less then")
 
-  currentMousePos = { x: 60, y: 150 };
-  $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
-  $('#circle').css('-webkit-mask-position-y', currentMousePos.y);
+  // currentMousePos = { x: 60, y: 150 };
+  // $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
+  // $('#circle').css('-webkit-mask-position-y', currentMousePos.y);
   menuBtn.querySelector('a').addEventListener('click',(e) =>{
     // console.log(this)
       e.preventDefault();
