@@ -64,7 +64,14 @@
 
 
 .article-content{
-    margin: 0 auto 80px;
+    blockquote{
+        font-size: 27px ;
+        font-style: italic;
+        color : #ccc; 
+        width: 82.5%;
+        margin: 0 auto 30px;    
+    }
+    margin: 0 auto 50px;
     div{
         width: 82.5%;
         margin: 0 auto 10px;
@@ -281,9 +288,13 @@
         padding: 0px 0 80px;
     }
     .article-content{
-        margin: 0 auto 50px;
+        margin: 0 auto 30px;
         .two-images{
             margin-bottom: 10px;
+        }
+        blockquote{
+            font-size: 20px;
+            width: 95%;
         }
         div{
             width: 100%;
