@@ -99,7 +99,7 @@
         margin: 50px 0px;
     }
     .two-images{
-        width: 100%;
+        // width: 100%;
         margin-bottom: 55px;
     }
     ul {
@@ -263,16 +263,46 @@
         }
     }
     .two-images .image-part {
-        height: 192px;;
+        height: 100%;
+        width: 100%;
     }
     .two-images{
         margin-bottom: 39px;
+        flex-direction: column;
     }
     .author-line{
         flex-direction: column;
     }
     .last-new {
         padding: 0px 0 80px;
+    }
+    .article-content{
+        margin: 0 auto 50px;
+        .two-images{
+            margin-bottom: 10px;
+        }
+        div{
+            width: 100%;
+            margin: 0 auto 10px;
+        }
+        h2{
+            margin: 30px auto 15px;
+        }
+        p, h2 {
+            width: 100%;
+        }
+
+        img{
+            margin: 20px 0px;
+            min-height:300px;    
+        }
+        iframe{
+
+            min-height: 400px;
+            object-fit: cover;
+            margin: 30px 0px;
+        }
+
     }
 }
 
