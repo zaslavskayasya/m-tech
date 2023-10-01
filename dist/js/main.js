@@ -105,7 +105,7 @@ if(window.innerWidth < 900){
 
   currentMousePos = { x: 60, y: 150 };
   $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
-  $('#circle').css('-webkit-mask-position-y', currentMousePos.y)
+  $('#circle').css('-webkit-mask-position-y', currentMousePos.y);
   menuBtn.querySelector('a').addEventListener('click',(e) =>{
     // console.log(this)
       e.preventDefault();
