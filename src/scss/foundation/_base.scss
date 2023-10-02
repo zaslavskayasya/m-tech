@@ -24,15 +24,26 @@ body {
 }
 
 
-.three-row {
+.three-row, .three-row-v2 {
   display: flex;
-  justify-content: space-between;
   flex-flow: wrap;
-
   .row, .item{
     width: 33.3%
   }
 }
+
+.three-row{
+  justify-content: space-between;
+
+}
+
+.three-row-v2{
+  justify-content: flex-start;
+  .item{
+    margin-right: 20px;;
+  }
+}
+
 
 .card{
   transition: all ease 0.3s;
@@ -508,6 +519,8 @@ body {
   .container{
     padding: 0 15px 0 15px;
   }
+
+
 }
 
 @media screen and (max-width: 1118px){
