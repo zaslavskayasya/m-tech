@@ -1,11 +1,7 @@
 console.log(`Loaded main.js`);
 
 
-
-
 $(document).ready(function(){
-
-
     $('.new-slider').slick({
         centerMode: true,
         slidesToShow: 1,
@@ -72,7 +68,6 @@ $(document).ready(function(){
 
 
 
-
 let currentMousePos = { x: 50, y: 250 };
 $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
 $('#circle').css('-webkit-mask-position-y', currentMousePos.y)
@@ -86,28 +81,16 @@ $('#scene').mousemove(function(e) {
 });
 
 
-$("#teplo").click(function() {
-  // Змінюємо атрибут 'src' на нове посилання на зображення
-  $("#circle").attr("src", "./img/illustration/base2.png");
-});
-
-$("#night").click(function() {
-  // Змінюємо атрибут 'src' на нове посилання на зображення
-  $("#circle").attr("src", "./img/illustration/base1.png");
-});
+document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener('click', function () {
+  document.querySelector("#circle").setAttribute('src', item.getAttribute('data-bg'));
+}));
 
 
 
 let menuBtn = document.querySelector('.menu-item-has-children');
 
 if(window.innerWidth < 900){
-  console.log("less then")
-
-  // currentMousePos = { x: 60, y: 150 };
-  // $('#circle').css('-webkit-mask-position-x', currentMousePos.x );
-  // $('#circle').css('-webkit-mask-position-y', currentMousePos.y);
   menuBtn.querySelector('a').addEventListener('click',(e) =>{
-    // console.log(this)
       e.preventDefault();
   } )
 }
