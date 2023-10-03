@@ -271,13 +271,16 @@ header.open .overlay-header{
     transition: all ease 0.3s;;
     pointer-events: none;;
     display: flex;
-  position: absolute;
-  top:10px;
-  padding-top: 20px;
-  background-color: transparent;
-  min-width: 230px;
-  z-index: 1;
-  color: #fff;
+    position: absolute;
+    top:10px;
+    padding-top: 20px;
+    background-color: transparent;
+    min-width: 230px;
+    z-index: 1;
+    color: #fff;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
   a {
     color: #fff;
   }
@@ -299,6 +302,12 @@ header.open .overlay-header{
 /* Change the background color of the dropup button when the dropup content is shown */
 .dropup:hover .dropbtn {
 
+}
+
+@media screen and (max-width: 1600px){
+    .header .logo{
+        padding-top: 14px;
+    }
 }
 
 

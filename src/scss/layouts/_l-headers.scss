@@ -30,38 +30,39 @@ ul.breadcrumb {
     color: rgba(255, 255, 255, 0.50);
     display: flex;
     flex-flow: wrap;
-  }
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-    margin-right: 10px;
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 10px;;
-
-  }
-  ul.breadcrumb li a:after {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-image: url('../img/icons/arr-bread.svg');
-    background-position: center;
-    background-size: contain;
-    margin-left: 11px;
-  }
-  ul.breadcrumb li a {
-    color: rgba(255, 255, 255, 0.50);
-    text-decoration: none;
-  }
-  ul.breadcrumb li a:hover {
-    color: rgba(255, 255, 255, 0.50);
-    text-decoration: underline;
-  }
+    margin-left: 0px;
+}
+ul.breadcrumb a ,
+ul.breadcrumb span{
+  display: inline;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+ul.breadcrumb  a:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url('../img/icons/arr-bread.svg');
+  background-position: center;
+  background-size: contain;
+  margin-left: 11px;
+}
+ul.breadcrumb  a {
+  color: rgba(255, 255, 255, 0.50);
+  text-decoration: none;
+}
+ul.breadcrumb a:hover {
+  color: rgba(255, 255, 255, 0.50);
+  text-decoration: underline;
+}
 
 
 
