@@ -55,21 +55,22 @@ $(".next-btn").click(function () {
 
 
 
-if (window.matchMedia("(max-width: 780px)").matches) {
-  $(".zoom-images img").each((idx, el) => {
-    $(el).ezPlus({
-      zoomWindowPosition: 6
-    });
-  });
-} else {
-  $(".zoom-images img").each((idx, el) => {
-      $(el).ezPlus({
-        zoomWindowPosition: 2
-      });
-  });
-  /* the viewport is more than 500 pixels wide */
-}
+// if (window.matchMedia("(max-width: 780px)").matches) {
+//   $(".zoom-images img").each((idx, el) => {
+//     $(el).ezPlus({
+//       zoomWindowPosition: 6
+//     });
+//   });
+// } else {
+//   /* the viewport is more than 500 pixels wide */
+// }
 
+$(".zoom-images img").each((idx, el) => {
+    $(el).ezPlus({
+      constrainType: 'height', constrainSize: 274, zoomType: 'lens',
+      containLensZoom: true, gallery: 'gallery_01', cursor: 'pointer', galleryActiveClass: 'active'
+    });
+});
 
 // $('#zoom_01').ezPlus({
 //     lenszoom: true,
