@@ -539,7 +539,8 @@ body {
 .only-desc{
     display: flex;
 }
-.only-mob{
+.only-mob, 
+.only-mob.more-btn{
   display: none
 }
 
@@ -604,7 +605,8 @@ body {
   .only-desc{
     display: none;
   }
-  .only-mob{
+  .only-mob,
+  .only-mob.more-btn{
     display: flex
   }
 }
