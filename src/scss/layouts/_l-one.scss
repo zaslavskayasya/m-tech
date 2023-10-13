@@ -17,7 +17,7 @@
         // justify-content: space-between;
         width: 100%;;
         .slide{
-            width: 137px;
+            width: 137px!important;
             cursor: pointer;
             margin: 10px 0px;
             img{
@@ -369,6 +369,8 @@
     }
 }
 
+
+
 #same{
     margin-bottom: 140px;
     .three-row{
@@ -376,6 +378,15 @@
     }
 }
 
+
+@media screen and (max-width: 1600px){
+    .btn-wrap .prev-btn {        
+        left: 6%;
+    }
+    .btn-wrap .next-btn{
+        right: 6%;
+    }
+}
 
 @media screen and (max-width: 1200px){
     .inform-lines {
@@ -387,6 +398,9 @@
     }
     .videogallery .video-left{
         width: 56%;
+    }
+    .btn-wrap .next-btn, .btn-wrap .prev-btn{
+        top: 30%;
     }
 }
 

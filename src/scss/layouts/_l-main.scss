@@ -62,11 +62,22 @@
     align-items: center;
     margin-bottom: 42px;
     cursor: pointer;
+    &:hover{
+        .img{
+            border: 4px solid #b8f9b8b0;
+            border-radius: 100%;
+        }
+        .choose{
+            color: #b8f9b8
+        }
+    }
     .img{
         width: 84px;
         height: 84px;
         margin-right: 35px;
         overflow: hidden;
+        border: 3px solid transparent;
+        border-radius: 100%;
         img{
             width: 100%;
             height: 100%;
