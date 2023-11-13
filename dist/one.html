@@ -22,6 +22,7 @@
     <title>Document</title>
     <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
     <link rel="icon" type="image/png" href="/icon-192x192.png">
+    <link rel="stylesheet" href="./js/plugins/swiper/swiper.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./js/plugins/slick.css">
@@ -98,21 +99,19 @@
     <div class="container">
       <div class="goods-info">
         <div class="goods-left">
-          <div class="main-slider zoom-images">
-            <div class="slide">
-              <div class="img-wrap"> <img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="img-wrap"><img src="./img/items/3.png" data-zoom-image="./img/items/3x2.png" alt=""></div>
-            </div>
-            <div class="slide">
-              <div class="img-wrap"> <img src="./img/items/4.png" data-zoom-image="./img/items/4x2.png" alt=""></div>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper zoom-images">
+              <div class="swiper-slide"><img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png"></div>
+              <div class="swiper-slide"><img src="./img/items/3.png" data-zoom-image="./img/items/3x2.png"></div>
+              <div class="swiper-slide"><img src="./img/items/4.png" data-zoom-image="./img/items/4x2.png"></div>
             </div>
           </div>
-          <div class="preview-slider">
-            <div class="slide"> <img src="./img/items/1.png" alt=""></div>
-            <div class="slide"> <img src="./img/items/3.png" alt=""></div>
-            <div class="slide"> <img src="./img/items/4.png" alt=""></div>
+          <div class="swiper mySwiper" thumbsslider="">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/items/1.png"></div>
+              <div class="swiper-slide"><img src="./img/items/3.png"></div>
+              <div class="swiper-slide"><img src="./img/items/4.png"></div>
+            </div>
           </div>
         </div>
         <div class="goods-right">
@@ -595,10 +594,12 @@
       </div>
     </footer>
     <script type="text/javascript" src="./js/header.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/plugins/slick.min.js"></script>
     <script src="./js/form.js" defer></script>
-    <script src="./js/./plugins/jquery.ez-plus.js"></script>
+    <script src="./js/./plugins/jquery.ez-plus.js" defer></script>
+    <script src="./js/swiper.min.js" defer></script>
     <script src="./js/one.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

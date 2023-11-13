@@ -1,59 +1,106 @@
-console.log('one page ');
+console.log("one page ");
 
-let catalogSlider = $('.main-slider')
+const swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
 
-catalogSlider.slick({
-  dots: false,
-  arrows: false,
-  // slidesToScroll: 1,
-  slidesToShow: 1,
-  asNavFor: '.preview-slider',
-  focusOnSelect: true,
-  infinite: false,
+const swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
 });
 
 
-let sliderNavCatalog = $('.preview-slider');
 
-sliderNavCatalog.slick({
-  asNavFor: '.main-slider',
-  dots: false,
-  arrows: false,
-  centerMode: false,
-  focusOnSelect: true,
-  variableWidth: false,
-  slidesToShow: 3,
-  infinite: false,
-});
+// let catalogSlider = $('.main-slider')
 
+// catalogSlider.slick({
+//   dots: false,
+//   arrows: false,
+//   // slidesToScroll: 1,
+//   slidesToShow: 1,
+//   asNavFor: '.preview-slider',
+//   focusOnSelect: true,
+//   infinite: false,
+// });
 
-let successSlider = $('.sccess-slider');
+// let sliderNavCatalog = $('.preview-slider');
 
-successSlider.slick({
-  dots: false,
-  arrows: false,
-  centerMode: false,
-  focusOnSelect: true,
-  variableWidth: false,
-  slidesToShow: 3,
-  infinite: false,
-  responsive: [{
-    breakpoint: 920,
-    settings: {
-        slidesToShow: 1,
-      }
-  }]
-});
+// sliderNavCatalog.slick({
+//   asNavFor: '.main-slider',
+//   dots: false,
+//   arrows: false,
+//   centerMode: false,
+//   focusOnSelect: true,
+//   variableWidth: false,
+//   slidesToShow: 3,
+//   infinite: false,
+// });
+$(document).ready(function () {
+  let successSlider = $(".sccess-slider");
+  successSlider.slick({
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: false,
+    slidesToShow: 3,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 
-$(".prev-btn").click(function () {
+  $(".prev-btn").click(function () {
     successSlider.slick("slickPrev");
-});
+  });
 
-$(".next-btn").click(function () {
+  $(".next-btn").click(function () {
     successSlider.slick("slickNext");
+  });
+
+  let tabButtons = document.querySelectorAll(".tab-btn");
+  let contentList = document.querySelectorAll(".content-item");
+
+  // Tabs
+  $(".tabs-wrap > a[href*='#']").on("click", function (e) {
+    let anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("href")).offset().top - 10,
+        },
+        777
+      );
+    e.preventDefault();
+    return false;
+  });
+
+  // Swiper
 });
+// const swiper = new Swiper(".mySwiper", {
+//   spaceBetween: 10,
+//   slidesPerView: 4,
+//   freeMode: true,
+//   watchSlidesProgress: true,
+// });
 
-
+// const swiper2 = new Swiper(".mySwiper2", {
+//   spaceBetween: 10,
+//   thumbs: {
+//     swiper: swiper,
+//   },
+// });
 
 // if (window.matchMedia("(max-width: 780px)").matches) {
 //   $(".zoom-images img").each((idx, el) => {
@@ -66,10 +113,15 @@ $(".next-btn").click(function () {
 // }
 
 $(".zoom-images img").each((idx, el) => {
-    $(el).ezPlus({
-      constrainType: 'height', constrainSize: 274, zoomType: 'lens',
-      containLensZoom: true, gallery: 'gallery_01', cursor: 'pointer', galleryActiveClass: 'active'
-    });
+  $(el).ezPlus({
+    constrainType: "height",
+    constrainSize: 274,
+    zoomType: "lens",
+    containLensZoom: true,
+    gallery: "gallery_01",
+    cursor: "pointer",
+    galleryActiveClass: "active",
+  });
 });
 
 // $('#zoom_01').ezPlus({
@@ -81,24 +133,6 @@ $(".zoom-images img").each((idx, el) => {
 //     // zoomType: 'inner',
 //     // cursor: 'crosshair'
 // });
-
-let tabButtons = document.querySelectorAll('.tab-btn');
-let contentList = document.querySelectorAll('.content-item');
-
-
-console.log(tabButtons);
-
-$(document).ready(function(){
-    $(".tabs-wrap > a[href*='#']").on("click", function(e){
-      var anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top -10
-      }, 777);
-      e.preventDefault();
-      return false;
-    });
-  });
-
 
 // tabButtons.addEventListener('click', (el)=>{
 //         console.log('click');
@@ -123,10 +157,9 @@ $(document).ready(function(){
 
 //         activateEl.classList.add('active');
 
-//         console.log(activateEl);        
+//         console.log(activateEl);
 
 //     });
 
 // })
-
 //# sourceMappingURL=one.js.map

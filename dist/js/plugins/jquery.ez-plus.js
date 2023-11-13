@@ -1958,6 +1958,7 @@ if (typeof Object.create !== 'function') {
         constrainType: false,  //width or height
         containLensZoom: false,
         cursor: 'inherit', // user should set to what they want the cursor as, if they have set a click function
+        // cursor: url('../../img/icons/cursor.svg'),
         debug: false,
         easing: false,
         easingAmount: 12,
@@ -1989,7 +1990,7 @@ if (typeof Object.create !== 'function') {
         // allow to continue zooming out, so it keeps retrocompatibility.
         mantainZoomAspectRatio: false,
         maxZoomLevel: false,
-        minZoomLevel: 1.01,
+        minZoomLevel: 1.04,
 
         onComplete: $.noop,
         onDestroy: $.noop,

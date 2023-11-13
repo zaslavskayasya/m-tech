@@ -10,31 +10,63 @@
             | EVO-SHOTS-S
             br 
             | thermal imaging monocular
-
 .container 
-    .goods-info 
-        .goods-left 
-            .main-slider.zoom-images
-                .slide
-                    .img-wrap 
-                        img(src="./img/items/1.png",
-                        data-zoom-image="./img/items/1x2.png", alt="")
-                .slide 
-                    .img-wrap
-                        img(src="./img/items/3.png", 
-                        data-zoom-image="./img/items/3x2.png", ,alt="")
-                .slide
-                    .img-wrap 
-                        img(src="./img/items/4.png",
-                        data-zoom-image="./img/items/4x2.png", alt="")
+    .goods-info
+        .goods-left
+            .swiper.mySwiper2
+                .swiper-wrapper.zoom-images
+                    .swiper-slide
+                        img(src='./img/items/1.png', data-zoom-image="./img/items/1x2.png")
+                    .swiper-slide
+                        img(src='./img/items/3.png', data-zoom-image="./img/items/3x2.png",)
+                    .swiper-slide
+                        img(src='./img/items/4.png', data-zoom-image="./img/items/4x2.png",)
+            .swiper.mySwiper(thumbsslider='')
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src='./img/items/1.png')
+                    .swiper-slide
+                        img(src='./img/items/3.png')
+                    .swiper-slide
+                        img(src='./img/items/4.png')
+            //- .swiper.mySwiper2
+            //-     .swiper-wrapper
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
+            //- .swiper.mySwiper(thumbsslider='')
+            //-     .swiper-wrapper
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
+            //-         .swiper-slide
+            //-             img(src='./img/items/1.png')
 
-            .preview-slider 
-                .slide 
-                    img(src="./img/items/1.png", alt="")
-                .slide 
-                    img(src="./img/items/3.png", alt="")
-                .slide 
-                    img(src="./img/items/4.png", alt="")
+            //- .main-slider.zoom-images
+            //-     .slide
+            //-         .img-wrap 
+            //-             img(src="./img/items/1.png",
+            //-             data-zoom-image="./img/items/1x2.png", alt="")
+            //-     .slide 
+            //-         .img-wrap
+            //-             img(src="./img/items/3.png", 
+            //-             data-zoom-image="./img/items/3x2.png", ,alt="")
+            //-     .slide
+            //-         .img-wrap 
+            //-             img(src="./img/items/4.png",
+            //-             data-zoom-image="./img/items/4x2.png", alt="")
+
+            //- .preview-slider 
+            //-     .slide 
+            //-         img(src="./img/items/1.png" alt="")
+            //-     .slide 
+            //-         img(src="./img/items/3.png" alt="")
+            //-     .slide 
+            //-         img(src="./img/items/4.png" alt="")
         .goods-right 
             p.heading 
                 | EVO-SHOTS-S 
@@ -63,32 +95,32 @@
                     .description.normal_text 2500м
 
 .container 
-        .tabs-part
-            .tabs-wrap
-                a(href="#description").tab-btn.active(data-tab="tab-1") Опис
-                a(href="#sertificate").tab-btn(data-tab="tab-2") Специфікація
-                a(href="#sccess").tab-btn(data-tab="tab-3") Аксесуари
-                a(href="#gallery").tab-btn(data-tab="tab-4") Відеогалерея
-                a(href="#same").tab-btn(data-tab="tab-5") Схожі товари
-            .content-wrap.wrap-inform-texts#description
-                .content-item#tab-1.active
-                    .big-text 
-                        | ЩО 
-                        span.accent ВАРТО ЗНАТИ, <br>
-                        | ПРО EVO-SHOTS-S 
-                    .inform-part 
-                        p.normal_text 
-                            | Лінійка тепловізійних монокулярів EVO-SHOT-S представлена з обʼєктивами F25мм, F35мм, F50мм та F75мм, що дозволяють оператору використовувати пристрій як компактний кишеньковий монокуляр, так і як інструмент спо-стереження на великі відстані.
-                        p.normal_text 
-                            | Вбудований відеорекордер дозволить вам зафіксувати потрібні моменти, а за до-помогою модулю Wi-Fi ви можете підʼєднати до монокуляра ваш смартфон або планшет та вести спостереження з екрану гаджета.
-                //- .content-item#tab-2 
-                //-     p content 2
-                //- .content-item#tab-3 
-                //-     p content 3
-                //- .content-item#tab-4 
-                //-     p content 4
-                //- .content-item#tab-5
-                //-     p content 5
+    .tabs-part
+        .tabs-wrap
+            a(href="#description").tab-btn.active(data-tab="tab-1") Опис
+            a(href="#sertificate").tab-btn(data-tab="tab-2") Специфікація
+            a(href="#sccess").tab-btn(data-tab="tab-3") Аксесуари
+            a(href="#gallery").tab-btn(data-tab="tab-4") Відеогалерея
+            a(href="#same").tab-btn(data-tab="tab-5") Схожі товари
+        .content-wrap.wrap-inform-texts#description
+            .content-item#tab-1.active
+                .big-text 
+                    | ЩО 
+                    span.accent ВАРТО ЗНАТИ, <br>
+                    | ПРО EVO-SHOTS-S 
+                .inform-part 
+                    p.normal_text 
+                        | Лінійка тепловізійних монокулярів EVO-SHOT-S представлена з обʼєктивами F25мм, F35мм, F50мм та F75мм, що дозволяють оператору використовувати пристрій як компактний кишеньковий монокуляр, так і як інструмент спо-стереження на великі відстані.
+                    p.normal_text 
+                        | Вбудований відеорекордер дозволить вам зафіксувати потрібні моменти, а за до-помогою модулю Wi-Fi ви можете підʼєднати до монокуляра ваш смартфон або планшет та вести спостереження з екрану гаджета.
+            //- .content-item#tab-2 
+            //-     p content 2
+            //- .content-item#tab-3 
+            //-     p content 3
+            //- .content-item#tab-4 
+            //-     p content 4
+            //- .content-item#tab-5
+            //-     p content 5
 .mega-image(style="background-image: url('./img/illustration/illustration2.png')") 
 
 .container 
@@ -240,32 +272,32 @@
         .sccess-slider 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
             a(href="#").slide 
                 .img-wrap 
-                    img(src="./img/items/1.png", alt="")
+                    img(src="./img/items/1.png" alt="")
                 h3.h3.UPPER  EVO-SHOTS-S
                 h3.h3 thermal imaging monocular 
 
@@ -275,7 +307,7 @@
             h2.h2 Відеогалерея
             a(href="https://zaslavskayasya.github.io/m-tech/dist/article.html").more-btn.only-desc 
                 span Дивитись всі відео
-                img(src="./img/icons/precision2.svg", alt="")
+                img(src="./img/icons/precision2.svg" alt="")
         .videogallery
             .video-left
                 .left-wrap 
@@ -293,7 +325,7 @@
                         a(href="https://zaslavskayasya.github.io/m-tech/dist/article.html").video-description  Pulsar приносить кардинальні новини на IWA OutdoorClassics
         a(href="#").more-btn.only-mob 
             span Дивитись всі відео
-            img(src="./img/icons/precision2.svg", alt="")
+            img(src="./img/icons/precision2.svg" alt="")
 .container 
     .popular#same
         .h2 Ви переглядали
@@ -301,7 +333,7 @@
             .item
                 .card 
                     a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
-                        img(src="./img/items/1.png", alt="place for image")
+                        img(src="./img/items/1.png" alt="place for image")
                     .card-content
                         a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
                             p.h3 EVO-SHOTS-S 
@@ -328,7 +360,7 @@
             .item
                 .card 
                     a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
-                        img(src="./img/items/1.png", alt="place for image")
+                        img(src="./img/items/1.png" alt="place for image")
                     .card-content
                         a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
                             p.h3 STRIGERS
@@ -355,7 +387,7 @@
             .item 
                 .card
                     a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
-                        img(src="./img/items/2.png", alt="place for image")
+                        img(src="./img/items/2.png" alt="place for image")
                     .card-content
                         a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
                             p.h3 BNV - PRO 
@@ -393,11 +425,11 @@
                 form(id='contact-form' onsubmit='return validateForm(event)')
                     .form-group
                         label(for='phone') Номер телефону:
-                        input(type='tel', id='phone', name='phone', placeholder='Введіть номер телефону', pattern='[0-9]{10}', required)
+                        input(type='tel' id='phone' name='phone' placeholder='Введіть номер телефону' pattern='[0-9]{10}', required)
                         span.error-message(id='phone-error') Невірний номер
                     .form-group
                         label(for='message') Повідомлення:
-                        textarea(id='message', name='message', placeholder='Введіть повідомлення', required)
+                        textarea(id='message' name='message' placeholder='Введіть повідомлення', required)
                         span.error-message(id='message-error') Поле обовєязкове
                     button.button(type='submit') Надіслати
 

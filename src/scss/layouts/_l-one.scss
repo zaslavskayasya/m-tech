@@ -46,8 +46,166 @@
             }
         }
     }
-    
+
 }
+
+.slider-big-wrap{
+    width: 300px;
+    margin: 0 auto 100px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // cursor: pointer;
+    cursor: url('../../img/icons/cursor.svg'), auto!Important;
+    .swiper-slide img{
+        cursor: url('../../img/icons/cursor.svg'), auto;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: auto;
+    width: 100%;
+    .zoom-images{
+        cursor: url('../../img/icons/cursor.svg'), auto!Important;
+
+    }
+  }
+
+  .mySwiper {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 190px!important;
+    height: 160px;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+.swiper-slide-visible{
+    background-color: transparent;
+}
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #fff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+//   }
+
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+
+
+//   .swiper {
+//     width: 100%;
+//     height: 300px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+//   .swiper-slide {
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .mySwiper2 {
+//     width: 296px;
+//     height: 250.508px;
+//   }
+
+//   .mySwiper {
+//     height: 120px;
+//     box-sizing: border-box;
+//     padding: 10px 0;
+//   }
+
+//   .mySwiper .swiper-slide {
+//     width: 93px!important;
+//     height: 90px;
+//     opacity: 0.4;
+//     cursor: pointer;
+//   }
+
+//   .mySwiper .swiper-slide-thumb-active {
+//     opacity: 1;
+//   }
+
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+//   .swiper-slide-thumb-active{
+//     border-bottom: 2px solid #095cd9;
+//     padding-bottom: 6px;
+//   }
+// .swiper-slide-visible{
+//     background-color: transparent;
+// }
+
+
 
 .ZoomContainer{
     cursor: url('./../img/icons/precision2.svg'), auto;
@@ -136,6 +294,7 @@
         }
     }
 }
+
 
 
 .content-item {
@@ -613,5 +772,22 @@
     }
     .gallery-wrap#gallery{
         margin-bottom: 60px;;
+    }
+    .mySwiper .swiper-slide{
+        height: 100px;
+        width: 110px!important;
+    }
+    .mySwiper{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mySwiper{
+        height: 100px;;
+    }
+    .mySwiper .swiper-slide{
+        height: 80px;
+        width: 90px!important;
     }
 }

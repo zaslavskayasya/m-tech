@@ -49,7 +49,7 @@ function validateForm(event) {
       successPopup.classList.add('active');
     }, 1000);
   });
-  
+
   closePopup.addEventListener('click', function () {
     successPopup.classList.remove('active');
   });

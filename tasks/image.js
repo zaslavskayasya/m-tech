@@ -2,6 +2,7 @@ const { src, dest } = require('gulp');
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+// const webp = require('gulp-webp');
 const browserSync = require('browser-sync').get('Main');
 
 const path = require('./path');
@@ -22,6 +23,7 @@ const imgTask = () => {
         imagemin.gifsicle({ optimizationLevel: 3 })
       ])
     )
+    .pipe(webp())
     .pipe(dest(path.dist.img))
     .pipe(browserSync.stream());
 };
