@@ -315,6 +315,8 @@
     }
     .big-text{
         line-height: 138%;
+        max-width: 50%;
+        padding-right: 20px;
     }
 }
 
@@ -676,6 +678,9 @@
     }
     .content-item.active {
         flex-direction: column;
+    }
+    .content-item .big-text{
+        max-width: 100%;
     }
     .wrap-inform-texts{
         .big-text {
