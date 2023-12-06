@@ -2,13 +2,13 @@ console.log("one page ");
 
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
+  slidesPerView: 2,
+  loop: true,
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
+  simulateTouch: true,
   thumbs: {
     swiper: swiper,
   },
