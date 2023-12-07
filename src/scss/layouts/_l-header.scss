@@ -201,7 +201,7 @@ header.open .overlay-header{
 }
 
 .sub-menu .row{
-    width: 250px;
+    width: 245px;
 }
 
 .current-menu-item{
@@ -275,12 +275,13 @@ header.open .overlay-header{
     top:10px;
     padding-top: 20px;
     background-color: transparent;
-    min-width: 280px;
+    // min-width: 280px;
     z-index: 1;
     color: #fff;
     list-style: none;
     padding-left: 0px;
     margin-left: 0px;
+    flex-direction: row;;
   a {
     color: #fff;
   }
