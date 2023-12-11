@@ -281,7 +281,9 @@ header.open .overlay-header{
     list-style: none;
     padding-left: 0px;
     margin-left: 0px;
-    // flex-direction: row;;
+    flex-direction: row;;
+    max-height: 200px;
+    flex-flow: column wrap;
   a {
     color: #fff;
   }
