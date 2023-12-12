@@ -283,7 +283,7 @@ header.open .overlay-header{
     margin-left: 0px;
     flex-direction: row;;
     max-height: 352px;
-    width: 400px;
+    min-width: 400px;
     flex-flow: column wrap;
   a {
     color: #fff;
