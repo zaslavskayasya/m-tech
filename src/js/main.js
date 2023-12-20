@@ -69,15 +69,19 @@ $(document).ready(function(){
 
 
 let currentMousePos = { x: 50, y: 250 };
-$('#circle').css('-webkit-mask-position-x', currentMousePos.x );
-$('#circle').css('-webkit-mask-position-y', currentMousePos.y)
+$('#circle').css('-webkit-mask-position-x', currentMousePos.x);
+$('#circle').css('-webkit-mask-position-y', currentMousePos.y);
+$('#cross').addClass('showed');
 
 $('#scene').mousemove(function(e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
   
   $('#circle').css('-webkit-mask-position-x', currentMousePos.x - 85 );
-  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 85 )
+  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 85 );
+
+  $('#cross').css('top', currentMousePos.y);
+  $('#cross').css('left', currentMousePos.x);
 });
 
 
