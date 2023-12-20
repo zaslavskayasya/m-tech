@@ -60,13 +60,9 @@ $(document).ready(function(){
       });
     
       $('.custom-next-button').click(function(){
-        $('.left-gallery >  .slider-left').slick('slickNext');
+        $('.left-gallery > .slider-left').slick('slickNext');
       });
-
-
 });
-
-
 
 let currentMousePos = { x: 50, y: 250 };
 $('#circle').css('-webkit-mask-position-x', currentMousePos.x);
@@ -78,9 +74,11 @@ $('#scene').mousemove(function(e) {
     currentMousePos.y = e.pageY;
   
   $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 85}px ${currentMousePos.y - 85}px`);
+  // Change position cross
   $('#cross').css({'top': currentMousePos.y, 'left': currentMousePos.x});
 });
 
+// Work with scene
 $('#scene').mouseleave(e => {
   $('#circle').css('mask-size', '0');
   $('#cross').removeClass('showed');
@@ -91,6 +89,7 @@ $('#scene').mouseenter(e => {
   $('#cross').addClass('showed');
 });
 
+// Work with choose buttons
 $('.choose-buttons').mouseleave(e => {
   $('#circle').css('mask-size', '250px');
   $('#cross').addClass('showed');
