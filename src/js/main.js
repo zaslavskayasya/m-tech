@@ -77,11 +77,28 @@ $('#scene').mousemove(function(e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
   
-  $('#circle').css('-webkit-mask-position-x', currentMousePos.x - 85 );
-  $('#circle').css('-webkit-mask-position-y', currentMousePos.y - 85 );
+  $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 85}px ${currentMousePos.y - 85}px`);
+  $('#cross').css({'top': currentMousePos.y, 'left': currentMousePos.x});
+});
 
-  $('#cross').css('top', currentMousePos.y);
-  $('#cross').css('left', currentMousePos.x);
+$('#scene').mouseleave(e => {
+  $('#circle').css('mask-size', '0');
+  $('#cross').removeClass('showed');
+});
+
+$('#scene').mouseenter(e => {
+  $('#circle').css('mask-size', '250px');
+  $('#cross').addClass('showed');
+});
+
+$('.choose-buttons').mouseleave(e => {
+  $('#circle').css('mask-size', '250px');
+  $('#cross').addClass('showed');
+});
+
+$('.choose-buttons').mouseenter(e => {
+  $('#circle').css('mask-size', '0');
+  $('#cross').removeClass('showed');
 });
 
 
