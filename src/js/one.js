@@ -30,6 +30,10 @@ $(document).ready(function () {
     variableWidth: false,
     slidesToShow: 3,
     infinite: false,
+    navigation: {
+      prevEl: '.prev-btn',
+      nextEl: '.next-btn',
+    },
     responsive: [
       {
         breakpoint: 920,
@@ -60,6 +64,10 @@ $(document).ready(function () {
     variableWidth: false,
     slidesToShow: 3,
     infinite: false,
+    navigation: {
+      prevEl: '.prev-btn',
+      nextEl: '.next-btn',
+    },
     responsive: [
       {
         breakpoint: 920,
@@ -75,7 +83,7 @@ $(document).ready(function () {
   });
 
   $(".next-btn").click(function () {
-    alsoSlider.slick
+    alsoSlider.slick("slickNext")
 
 
 
