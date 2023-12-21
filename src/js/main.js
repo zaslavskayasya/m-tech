@@ -107,10 +107,10 @@ document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener(
 
 
 
-let menuBtn = document.querySelector('.menu-item-has-children');
+// let menuBtn = document.querySelector('.menu-item-has-children');
 
-if(window.innerWidth < 900){
-  menuBtn.querySelector('a').addEventListener('click',(e) =>{
-      e.preventDefault();
-  } )
-}
+// if(window.innerWidth < 900){
+//   menuBtn.querySelector('a').addEventListener('click',(e) =>{
+//       e.preventDefault();
+//   } )
+// }

@@ -23,6 +23,7 @@
     <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
     <link rel="icon" type="image/png" href="/icon-192x192.png">
     <link rel="stylesheet" href="./js/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./js/plugins/magnific-popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./js/plugins/slick.css">
@@ -35,54 +36,15 @@
       <div class="for-mobile">
         <ul class="menu">
           <div class="center-nemu">
-            <li class="menu-item-has-children dropup current-menu-item"><a href="https://zaslavskayasya.github.io/m-tech/dist/category.html">Нічне бачення</a>
-              <ul class="sub-menu">
-                <div class="row">
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                </div>
-                <div class="row">
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li class="current-menu-item"> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                  <li> <a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Нічне бачення</a></li>
-                </div>
-              </ul>
-            </li>
-            <li class="menu-item-has-children dropup"><a href="category">Тепловізійне бачення </a>
-              <ul class="sub-menu">
-                <div class="row">
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Тепловізійне бачення</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Тепловізійне бачення</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Тепловізійне бачення</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">Тепловізійне бачення</a></li>
-                </div>
-              </ul>
-            </li>
-            <li class="menu-item-has-children dropup"><a href="https://zaslavskayasya.github.io/m-tech/dist/category.html">Fusion</a>
-              <ul class="sub-menu">
-                <div class="row">
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> Fusion</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> Fusion</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> Fusion</a></li>
-                  <li><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> Fusion</a></li>
-                </div>
-              </ul>
-            </li>
+            <li class="dropup current-menu-item"><a href="https://zaslavskayasya.github.io/m-tech/dist/category.html">Нічне бачення</a></li>
+            <li class="dropup"><a href="category">Тепловізійне бачення </a></li>
+            <li class="dropup"><a href="https://zaslavskayasya.github.io/m-tech/dist/category.html">Fusion</a></li>
             <li><a href="https://zaslavskayasya.github.io/m-tech/dist/category.html">Аксесуари</a></li>
           </div>
         </ul>
         <ul class="menu">
-          <li class="menu-item-has-children dropup"><a href="https://zaslavskayasya.github.io/m-tech/dist/about.html">Про нас </a>
-            <ul class="sub-menu">
-              <div class="row">
-                <li><a href="https://zaslavskayasya.github.io/m-tech/dist/about.html">Про нас</a></li>
-                <li><a href="https://zaslavskayasya.github.io/m-tech/dist/news.html">Новини</a></li>
-              </div>
-            </ul>
-          </li>
+          <li class="dropup"><a href="https://zaslavskayasya.github.io/m-tech/dist/about.html">Про нас </a></li>
+          <li><a href="https://zaslavskayasya.github.io/m-tech/dist/news.html">Новини</a></li>
           <li><a href="https://zaslavskayasya.github.io/m-tech/dist/contacts.html">Контакти</a></li>
         </ul>
         <div class="close-button">
@@ -109,14 +71,13 @@
     <div class="container">
       <div class="goods-info">
         <div class="goods-left">
+          <div class="btn-wrap">
+            <div class="prev-btn"> </div>
+            <div class="next-btn"> </div>
+          </div>
           <div class="wrapper">
             <div class="swiper mySwiper2">
-              <div class="swiper-wrapper zoom-images">
-                <div class="swiper-slide"><img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png"></div>
-                <div class="swiper-slide"><img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png"></div>
-                <div class="swiper-slide"><img src="./img/items/3.png" data-zoom-image="./img/items/3x2.png"></div>
-                <div class="swiper-slide"><img src="./img/items/4.png" data-zoom-image="./img/items/4x2.png"></div>
-              </div>
+              <div class="swiper-wrapper zoom-images"><a class="swiper-slide" href="./img/items/1.png" title="EVO-SHOTS-S"><img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png"></a><a class="swiper-slide" href="./img/items/3.png" title="EVO-SHOTS-S"><img src="./img/items/1.png" data-zoom-image="./img/items/1x2.png"></a><a class="swiper-slide" href="./img/items/3.png" title="EVO-SHOTS-S"><img src="./img/items/3.png" data-zoom-image="./img/items/3x2.png"></a><a class="swiper-slide" href="./img/items/4.png" title="EVO-SHOTS-S"><img src="./img/items/4.png" data-zoom-image="./img/items/4x2.png"></a></div>
             </div>
             <div class="swiper mySwiper" thumbsslider="">
               <div class="swiper-wrapper">
@@ -395,32 +356,143 @@
         <div class="next-btn"> </div>
       </div>
       <div class="container">
-        <h2 class="h2">Аксесуари</h2>
-        <div class="sccess-slider"> <a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a><a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a><a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a><a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a><a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a><a class="slide" href="#">
-            <div class="img-wrap"> <img src="./img/items/1.png" alt=""></div>
-            <h3 class="h3 UPPER"> EVO-SHOTS-S</h3>
-            <h3 class="h3">thermal imaging monocular </h3>
-          </a></div>
+        <div class="popular" id="same">
+          <div class="h2">Ви переглядали</div>
+          <div class="three-row sccess-slider">
+            <div class="item">
+              <div class="card"> <a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/1.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">EVO-SHOTS-S </p>
+                    <p class="h3 h3_subname">thermal imaging monocular</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card"> <a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/1.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">STRIGERS</p>
+                    <p class="h3 h3_subname">thermal sight</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card"><a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/2.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">BNV - PRO </p>
+                    <p class="h3 h3_subname">night vision binocular</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card"> <a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/1.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">EVO-SHOTS-S </p>
+                    <p class="h3 h3_subname">thermal imaging monocular</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card"> <a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/1.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">STRIGERS</p>
+                    <p class="h3 h3_subname">thermal sight</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card"><a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/2.png" alt="place for image"></a>
+                <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                    <p class="h3">BNV - PRO </p>
+                    <p class="h3 h3_subname">night vision binocular</p>
+                  </a>
+                  <p class="small_text">Оптична система (мм):</p>
+                  <div class="sizes_block">
+                    <div class="size active">25 </div>
+                    <div class="size">35 </div>
+                    <div class="size">50 </div>
+                    <div class="size">75 </div>
+                  </div>
+                  <div class="characters-table">
+                    <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                    <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                    <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                    <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -453,8 +525,12 @@
     </div>
     <div class="container">
       <div class="popular" id="same">
-        <div class="h2">Ви переглядали</div>
-        <div class="three-row">
+        <div class="h2">Дивіться також в цьому розділі: </div>
+        <div class="btn-wrap">
+          <div class="prev-btn"> </div>
+          <div class="next-btn"> </div>
+        </div>
+        <div class="three-row see-also">
           <div class="item">
             <div class="card"> <a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/1.png" alt="place for image"></a>
               <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
@@ -482,6 +558,28 @@
               <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
                   <p class="h3">STRIGERS</p>
                   <p class="h3 h3_subname">thermal sight</p>
+                </a>
+                <p class="small_text">Оптична система (мм):</p>
+                <div class="sizes_block">
+                  <div class="size active">25 </div>
+                  <div class="size">35 </div>
+                  <div class="size">50 </div>
+                  <div class="size">75 </div>
+                </div>
+                <div class="characters-table">
+                  <div class="line"> <span class="small_text">Разрешение </span><span class="small_text__bold"> 328х288</span></div>
+                  <div class="line"> <span class="small_text">Размер пикселя</span><span class="small_text__bold"> 17мкм</span></div>
+                  <div class="line"> <span class="small_text">Чувствительность</span><span class="small_text__bold"> 30мК</span></div>
+                  <div class="line"> <span class="small_text">Дистанция обнаружения</span><span class="small_text__bold"> 2500м</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card"><a class="card-img" href="https://zaslavskayasya.github.io/m-tech/dist/one.html"> <img src="./img/items/2.png" alt="place for image"></a>
+              <div class="card-content"><a href="https://zaslavskayasya.github.io/m-tech/dist/one.html">
+                  <p class="h3">BNV - PRO </p>
+                  <p class="h3 h3_subname">night vision binocular</p>
                 </a>
                 <p class="small_text">Оптична система (мм):</p>
                 <div class="sizes_block">
@@ -611,7 +709,7 @@
     <script src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/plugins/slick.min.js"></script>
     <script src="./js/form.js" defer></script>
-    <script src="./js/./plugins/jquery.ez-plus.js" defer></script>
+    <script src="./js/./plugins/jquery.magnific-popup.min.js" defer></script>
     <script src="./js/swiper.min.js" defer></script>
     <script src="./js/one.js" defer></script>
     <script src="./js/main.js" defer></script>

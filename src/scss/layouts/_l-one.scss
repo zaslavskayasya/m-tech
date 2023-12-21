@@ -6,7 +6,18 @@
     padding: 132px 0px 82px;
     overflow-x: hidden;
     .goods-left{
-        width: 49%
+        width: 49%;
+        position: relative;
+        .btn-wrap{
+            z-index: 99999;
+            cursor: pointer;
+            .next-btn, .prev-btn{
+                top: 60%;
+                padding: 10px;
+
+            }
+
+        }
     }
     // .preview-slider{
     //     width: 49%;
@@ -466,6 +477,7 @@
     position: relative;
     padding-top: 80px;;
     margin-bottom: 22px; ;
+    padding-bottom: 80px;;
     .container{ 
         overflow: auto;
         position: visible;
@@ -629,6 +641,7 @@
     }
     .accesoires {
         padding-top: 40px;
+        padding-bottom: 40px;
     }
     .gallery-wrap{
         padding-top: 80px;

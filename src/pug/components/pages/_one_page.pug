@@ -13,17 +13,21 @@
 .container 
     .goods-info
         .goods-left
+            .btn-wrap
+                .prev-btn 
+                .next-btn 
             .wrapper
                 .swiper.mySwiper2
                     .swiper-wrapper.zoom-images
-                        .swiper-slide
+                        a(href="./img/items/1.png" title="EVO-SHOTS-S").swiper-slide
                             img(src='./img/items/1.png', data-zoom-image="./img/items/1x2.png")
-                        .swiper-slide
+                        a(href="./img/items/3.png" title="EVO-SHOTS-S").swiper-slide
                             img(src='./img/items/1.png', data-zoom-image="./img/items/1x2.png")
-                        .swiper-slide
+                        a(href="./img/items/3.png" title="EVO-SHOTS-S").swiper-slide
                             img(src='./img/items/3.png', data-zoom-image="./img/items/3x2.png",)
-                        .swiper-slide
+                        a(href="./img/items/4.png" title="EVO-SHOTS-S").swiper-slide
                             img(src='./img/items/4.png', data-zoom-image="./img/items/4x2.png",)
+
                 .swiper.mySwiper(thumbsslider='')
                     .swiper-wrapper
                         .swiper-slide
@@ -34,44 +38,6 @@
                             img(src='./img/items/4.png')
                         .swiper-slide
                             img(src='./img/items/1.png')
-            //- .swiper.mySwiper2
-            //-     .swiper-wrapper
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-            //- .swiper.mySwiper(thumbsslider='')
-            //-     .swiper-wrapper
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-            //-         .swiper-slide
-            //-             img(src='./img/items/1.png')
-
-            //- .main-slider.zoom-images
-            //-     .slide
-            //-         .img-wrap 
-            //-             img(src="./img/items/1.png",
-            //-             data-zoom-image="./img/items/1x2.png", alt="")
-            //-     .slide 
-            //-         .img-wrap
-            //-             img(src="./img/items/3.png", 
-            //-             data-zoom-image="./img/items/3x2.png", ,alt="")
-            //-     .slide
-            //-         .img-wrap 
-            //-             img(src="./img/items/4.png",
-            //-             data-zoom-image="./img/items/4x2.png", alt="")
-
-            //- .preview-slider 
-            //-     .slide 
-            //-         img(src="./img/items/1.png" alt="")
-            //-     .slide 
-            //-         img(src="./img/items/3.png" alt="")
-            //-     .slide 
-            //-         img(src="./img/items/4.png" alt="")
         .goods-right 
             p.heading 
                 | EVO-SHOTS-S 
@@ -273,38 +239,171 @@
         .prev-btn 
         .next-btn  
     .container
-        h2.h2 Аксесуари
-        .sccess-slider 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
-            a(href="#").slide 
-                .img-wrap 
-                    img(src="./img/items/1.png" alt="")
-                h3.h3.UPPER  EVO-SHOTS-S
-                h3.h3 thermal imaging monocular 
+        .popular#same
+            .h2 Ви переглядали
+            .three-row.sccess-slider 
+                .item
+                    .card 
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/1.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 EVO-SHOTS-S 
+                                p.h3.h3_subname thermal imaging monocular
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
+                .item
+                    .card 
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/1.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 STRIGERS
+                                p.h3.h3_subname thermal sight
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
+                .item 
+                    .card
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/2.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 BNV - PRO 
+                                p.h3.h3_subname night vision binocular
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
+                .item
+                    .card 
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/1.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 EVO-SHOTS-S 
+                                p.h3.h3_subname thermal imaging monocular
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
+                .item
+                    .card 
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/1.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 STRIGERS
+                                p.h3.h3_subname thermal sight
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
+                .item 
+                    .card
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                            img(src="./img/items/2.png" alt="place for image")
+                        .card-content
+                            a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                                p.h3 BNV - PRO 
+                                p.h3.h3_subname night vision binocular
+                            p.small_text Оптична система (мм):
+                            .sizes_block 
+                                .size.active 25 
+                                .size 35 
+                                .size 50 
+                                .size 75 
+                            .characters-table 
+                                .line 
+                                    span.small_text Разрешение 
+                                    span.small_text__bold  328х288
+                                .line 
+                                    span.small_text Размер пикселя
+                                    span.small_text__bold  17мкм
+                                .line 
+                                    span.small_text Чувствительность
+                                    span.small_text__bold  30мК
+                                .line 
+                                    span.small_text Дистанция обнаружения
+                                    span.small_text__bold  2500м
 
 .container
     .gallery-wrap#gallery
@@ -333,8 +432,11 @@
             img(src="./img/icons/precision2.svg" alt="")
 .container 
     .popular#same
-        .h2 Ви переглядали
-        .three-row 
+        .h2 Дивіться також в цьому розділі: 
+        .btn-wrap
+            .prev-btn 
+            .next-btn 
+        .three-row.see-also 
             .item
                 .card 
                     a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
@@ -416,6 +518,35 @@
                             .line 
                                 span.small_text Дистанция обнаружения
                                 span.small_text__bold  2500м
+            .item 
+                .card
+                    a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html").card-img 
+                        img(src="./img/items/2.png" alt="place for image")
+                    .card-content
+                        a(href="https://zaslavskayasya.github.io/m-tech/dist/one.html")
+                            p.h3 BNV - PRO 
+                            p.h3.h3_subname night vision binocular
+                        p.small_text Оптична система (мм):
+                        .sizes_block 
+                            .size.active 25 
+                            .size 35 
+                            .size 50 
+                            .size 75 
+                        .characters-table 
+                            .line 
+                                span.small_text Разрешение 
+                                span.small_text__bold  328х288
+                            .line 
+                                span.small_text Размер пикселя
+                                span.small_text__bold  17мкм
+                            .line 
+                                span.small_text Чувствительность
+                                span.small_text__bold  30мК
+                            .line 
+                                span.small_text Дистанция обнаружения
+                                span.small_text__bold  2500м
+
+
 
 
 

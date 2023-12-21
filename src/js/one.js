@@ -9,6 +9,10 @@ const swiper = new Swiper(".mySwiper", {
 const swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
   simulateTouch: true,
+  navigation: {
+    prevEl: '.prev-btn',
+    nextEl: '.next-btn',
+  },
   thumbs: {
     swiper: swiper,
   },
@@ -16,30 +20,6 @@ const swiper2 = new Swiper(".mySwiper2", {
 
 
 
-// let catalogSlider = $('.main-slider')
-
-// catalogSlider.slick({
-//   dots: false,
-//   arrows: false,
-//   // slidesToScroll: 1,
-//   slidesToShow: 1,
-//   asNavFor: '.preview-slider',
-//   focusOnSelect: true,
-//   infinite: false,
-// });
-
-// let sliderNavCatalog = $('.preview-slider');
-
-// sliderNavCatalog.slick({
-//   asNavFor: '.main-slider',
-//   dots: false,
-//   arrows: false,
-//   centerMode: false,
-//   focusOnSelect: true,
-//   variableWidth: false,
-//   slidesToShow: 3,
-//   infinite: false,
-// });
 $(document).ready(function () {
   let successSlider = $(".sccess-slider");
   successSlider.slick({
@@ -68,6 +48,37 @@ $(document).ready(function () {
     successSlider.slick("slickNext");
   });
 
+
+
+  // also 
+  let alsoSlider = $(".see-also");
+  alsoSlider.slick({
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: false,
+    slidesToShow: 3,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".prev-btn").click(function () {
+    alsoSlider.slick("slickPrev");
+  });
+
+  $(".next-btn").click(function () {
+    alsoSlider.slick
+
+
+
   let tabButtons = document.querySelectorAll(".tab-btn");
   let contentList = document.querySelectorAll(".content-item");
 
@@ -88,77 +99,25 @@ $(document).ready(function () {
 
   // Swiper
 });
-// const swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
 
-// const swiper2 = new Swiper(".mySwiper2", {
-//   spaceBetween: 10,
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
 
-// if (window.matchMedia("(max-width: 780px)").matches) {
-//   $(".zoom-images img").each((idx, el) => {
-//     $(el).ezPlus({
-//       zoomWindowPosition: 6
-//     });
-//   });
-// } else {
-//   /* the viewport is more than 500 pixels wide */
-// }
-
-$(".zoom-images img").each((idx, el) => {
-  $(el).ezPlus({
-    constrainType: "height",
-    constrainSize: 274,
-    zoomType: "lens",
-    containLensZoom: true,
-    gallery: "gallery_01",
-    cursor: "pointer",
-    galleryActiveClass: "active",
-  });
+$('.zoom-images').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  tLoading: 'Loading image #%curr%...',
+  mainClass: 'mfp-img-mobile',
+  gallery: {
+    enabled: true,
+    navigateByImgClick: true,
+    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+  },
+  image: {
+    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    titleSrc: function(item) {
+      return item.el.attr('title') + '<small>by Mercury Technology</small>';
+    }
+  }
 });
 
-// $('#zoom_01').ezPlus({
-//     lenszoom: true,
-//     scrollZoom: true,
-//     zoomType: 'lens',
-//     // lensShape: 'round',
-//     lensSize:200
-//     // zoomType: 'inner',
-//     // cursor: 'crosshair'
-// });
 
-// tabButtons.addEventListener('click', (el)=>{
-//         console.log('click');
-// })
-
-// tabButtons.forEach((el)=>{
-
-//     el.addEventListener('click', ()=>{
-
-//         tabButtons.forEach((e)=>{
-//             e.classList.remove('active');
-//         })
-
-//         el.classList.add('active');
-
-//         let activateTab = el.dataset.tab;
-//         let activateEl = document.getElementById(activateTab);
-
-//         contentList.forEach((ar)=>{
-//             ar.classList.remove('active');
-//         })
-
-//         activateEl.classList.add('active');
-
-//         console.log(activateEl);
-
-//     });
-
-// })
+});

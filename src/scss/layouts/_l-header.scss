@@ -131,68 +131,68 @@ header.open .overlay-header{
 }
 
 /* Dropup Button */
-.dropup {
-    position: relative; 
-    &::after{
-        content: "";
-        // background-image: url(../img/icons/plus.svg);
-        display: block;
-        position: absolute;
-        height: 1px;
-        width: 12px;
-        background-color: #fff;
+// .dropup {
+//     position: relative; 
+//     &::after{
+//         content: "";
+//         // background-image: url(../img/icons/plus.svg);
+//         display: block;
+//         position: absolute;
+//         height: 1px;
+//         width: 12px;
+//         background-color: #fff;
 
-        right: -20px;
-        background-position: right;
-        background-repeat: no-repeat;
-        top: 50%;
+//         right: -20px;
+//         background-position: right;
+//         background-repeat: no-repeat;
+//         top: 50%;
 
-        transform: translateY(-50%);
-    }
-    &::before{
-        content: "";
-        // background-image: url(../img/icons/plus.svg);
-        display: block;
-        position: absolute;
-        height: 1px;
-        width: 12px;
-        background-color: #fff;
+//         transform: translateY(-50%);
+//     }
+//     &::before{
+//         content: "";
+//         // background-image: url(../img/icons/plus.svg);
+//         display: block;
+//         position: absolute;
+//         height: 1px;
+//         width: 12px;
+//         background-color: #fff;
 
-        right: -20px;
-        background-position: right;
-        background-repeat: no-repeat;
-        top: 50%;
-        transition: all ease 0.3s;
+//         right: -20px;
+//         background-position: right;
+//         background-repeat: no-repeat;
+//         top: 50%;
+//         transition: all ease 0.3s;
 
-        transform: translateY(-50%) rotate(90deg);
-    }
+//         transform: translateY(-50%) rotate(90deg);
+//     }
 
-    &:hover, 
-    &.active {
-        &::after , 
-        &::before {
-            background-color: h.$accent-color;
-        }
+//     &:hover, 
+//     &.active {
+//         &::after , 
+//         &::before {
+//             background-color: h.$accent-color;
+//         }
 
-    }
-    &:hover, 
-    &.active{
-       color:  h.$accent-color;
-       &:before{
-            transform: translateY(-50%) rotate(0deg);
-        }
-        .sub-menu{
-            opacity: 1;
-        }
-    }  
+//     }
+//     &:hover, 
+//     &.active{
+//        color:  h.$accent-color;
+//        &:before{
+//             transform: translateY(-50%) rotate(0deg);
+//         }
+//         .sub-menu{
+//             opacity: 1;
+//         }
+//     }  
 
-    &.open {
-        &:before{
-            transform: translateY(-50%) rotate(0deg);
-        }
-    }       
+//     &.open {
+//         &:before{
+//             transform: translateY(-50%) rotate(0deg);
+//         }
+//     }       
 
-}
+// }
 
 .sub-menu {
     display: flex;
@@ -309,13 +309,39 @@ header.open .overlay-header{
 }
 
 @media screen and (max-width: 1600px){
-    .header .logo{
-        padding-top: 14px;
+
+    .menu li:not(:last-child) {
+        margin-right: 24px;
+    }
+    .header .logo {
+        height: 68px;
+        left: 34px;
+        padding-top: 25px;
+        top: 28px;
+        width: 250px;
+    }
+    .menu .center-nemu li:not(:last-child) {
+        margin-right: 28px;
     }
 }
 
 
-@media screen and (max-width: 1520px){
+@media screen and(max-width: 1450px){
+    .menu .center-nemu li:not(:last-child) {
+        margin-right: 23px;
+    }
+}
+
+
+
+@media screen and(max-width: 1380px){
+    .menu a {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 1250px){
     .menu-item-has-children.open{
         .sub-menu {
             display: flex;
@@ -464,18 +490,18 @@ header.open .overlay-header{
             font-weight: 400;
         }
     }
-    .dropup.open{
-        margin-bottom: 20px;
-        .sub-menu{
-            display: flex;    
-            opacity: 1;
+    // .dropup.open{
+    //     margin-bottom: 20px;
+    //     .sub-menu{
+    //         display: flex;    
+    //         opacity: 1;
             
-            width: auto;      
-            text-align: left;;  
-            margin-bottom: 20px;;
+    //         width: auto;      
+    //         text-align: left;;  
+    //         margin-bottom: 20px;;
 
-        }
-    }
+    //     }
+    // }
 }
 .open-header {
 }
