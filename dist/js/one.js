@@ -2,13 +2,14 @@ console.log("one page ");
 
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
-  slidesPerView: 2,
+  slidesPerView: 3,
   loop: true,
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
   simulateTouch: true,
+  loop: true,
   navigation: {
     prevEl: '.prev-btn',
     nextEl: '.next-btn',
