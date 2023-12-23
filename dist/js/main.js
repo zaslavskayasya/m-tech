@@ -2,6 +2,7 @@ console.log(`Loaded main.js`);
 
 
 $(document).ready(function(){
+
     $('.new-slider').slick({
         centerMode: true,
         slidesToShow: 1,
@@ -62,6 +63,19 @@ $(document).ready(function(){
       $('.custom-next-button').click(function(){
         $('.left-gallery > .slider-left').slick('slickNext');
       });
+
+
+
+      let cards = document.querySelectorAll(".item .card");
+
+      cards.forEach(card => {
+        card.addEventListener('click', event => {
+          window.location = card.querySelector('a').href;
+        });
+      });
+
+
+
 });
 
 let currentMousePos = { x: 50, y: 250 };

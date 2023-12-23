@@ -129,4 +129,5 @@ $('.zoom-images').magnificPopup({
 });
 
 
+
 });

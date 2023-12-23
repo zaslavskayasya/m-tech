@@ -129,5 +129,6 @@ $('.zoom-images').magnificPopup({
 });
 
 
+
 });
 //# sourceMappingURL=one.js.map
