@@ -74,11 +74,16 @@ body {
   .small_text{
     margin-bottom: 15px;
   }
+}
+.item{
+  padding: 15px;
+  border-radius: 10px;;
+  cursor: pointer;
   &:hover{
     box-shadow: -6px 7px 20px #e2e2e2;
   }
-}
 
+}
 .sizes_block{
   display: flex;
   flex-wrap: wrap;
