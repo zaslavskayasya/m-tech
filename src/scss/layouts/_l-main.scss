@@ -27,7 +27,9 @@
 .hide {
     display: none;
 }
-
+#cross{
+    cursor: none;
+}
 
 #cross.showed{
     height: 85px;

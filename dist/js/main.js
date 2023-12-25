@@ -87,9 +87,9 @@ $('#scene').mousemove(function(e) {
     currentMousePos.x = e.pageX;
     currentMousePos.y = e.pageY;
   
-  $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 85}px ${currentMousePos.y - 85}px`);
+  $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 125}px ${currentMousePos.y - 125}px`);
   // Change position cross
-  $('#cross').css({'top': currentMousePos.y, 'left': currentMousePos.x});
+  $('#cross').css({'top': currentMousePos.y - 40, 'left': currentMousePos.x - 40});
 });
 
 // Work with scene
