@@ -9,7 +9,7 @@
         width: 49%;
         position: relative;
         .btn-wrap{
-            z-index: 99999;
+            z-index: 99;
             cursor: pointer;
             .next-btn, .prev-btn{
                 top: 60%;
@@ -389,9 +389,9 @@
 .btn-wrap{
     // position: absolute;
     // top: 40%;
-    z-index: 99999;
+    z-index: 99;
     .prev-btn{
-        z-index: 99999;
+        z-index: 99;
         top: 50%;
         left: 12%;
         position: absolute;
@@ -404,7 +404,7 @@
         background-image: url('../img/icons/slid-left.svg');
     }
     .next-btn{
-        z-index: 99999;
+        z-index: 99;
         right: 12%;
         top: 50%;
         position: absolute;
@@ -502,7 +502,7 @@
         left: 6%;
     }
     .btn-wrap .next-btn{
-        right: 6%;
+        right: 0%;
     }
 }
 
@@ -517,8 +517,8 @@
     .videogallery .video-left{
         width: 56%;
     }
-    .btn-wrap .next-btn, .btn-wrap .prev-btn{
-        top: 30%;
+    .goods-info .goods-left .btn-wrap .next-btn, .goods-info .goods-left .btn-wrap .prev-btn{
+        top: 40%;
     }
 }
 
