@@ -1,4 +1,4 @@
-console.log("one page ");
+console.log("one page 1");
 
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
