@@ -339,6 +339,14 @@
 .slick-initialized .slick-slide{
     padding: 20px;
 }
+.gallery-block .slick-initialized .slick-slide{
+        padding: 0px;
+}
+
+.gallery-block .slick-list {
+    padding-bottom: 0px;
+
+}
 
 @media screen and(max-width: 1600px){
     .menu a {
