@@ -4,7 +4,7 @@
     display: flex; 
     justify-content: flex-start;
     padding: 132px 0px 82px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .goods-left{
         width: 49%;
         position: relative;
@@ -12,12 +12,18 @@
             z-index: 99;
             cursor: pointer;
             .next-btn, .prev-btn{
-                top: 60%;
+                top: 45%;
                 padding: 10px;
 
             }
 
         }
+    }
+    .btn-wrap .prev-btn{
+        left: -4%
+    }
+    .btn-wrap .next-btn{
+        right: 0%;
     }
     // .preview-slider{
     //     width: 49%;
@@ -519,6 +525,12 @@
     }
     .goods-info .goods-left .btn-wrap .next-btn, .goods-info .goods-left .btn-wrap .prev-btn{
         top: 40%;
+    }
+    .goods-info .btn-wrap .prev-btn {
+        left: 0%;
+    }
+    .goods-info .btn-wrap .next-btn {
+        right: -2%;
     }
 }
 

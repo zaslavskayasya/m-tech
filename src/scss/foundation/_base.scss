@@ -62,7 +62,8 @@ body {
   }
   .card-content{
     padding-left: 16px;
-    padding-top: 5px;
+    padding-top: 15px;
+    text-align: left;
     a.header-card{
       transition: all ease 0.3s;
       display: block;
@@ -73,6 +74,7 @@ body {
   }
   .small_text{
     margin-bottom: 15px;
+    text-align: left;
   }
 }
 .item{
@@ -144,7 +146,7 @@ body {
       text-overflow: ellipsis;
       text-transform: none;
       white-space: nowrap;
-      width: 80%;
+      // width: 80%;
    }
 }
 
@@ -574,7 +576,9 @@ body {
     margin: 81px 0px 64px;
   }
   .card .card-content{
-    padding-left: 0px;;
+    padding-left: 0px;
+    
+    
   }
   .characters-table {
     padding: 0px 0px 10px 0;
