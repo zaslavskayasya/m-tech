@@ -21,15 +21,29 @@ const swiper2 = new Swiper(".mySwiper2", {
 
 
 $(document).ready(function () {
+  let slides = document.querySelectorAll('.sccess-slider .item');
+  console.log(slides);
+
+  let slidesToShow;
+
+  if(slides.length<=3){
+    console.log('less')
+    slidesToShow = slides.length;
+    $('.popular .btn-wrap').css("display", "none")
+    
+  } else {
+    slidesToShow = 3;
+  }
+
   let successSlider = $(".sccess-slider");
   successSlider.slick({
     dots: false,
     arrows: false,
-    centerMode: false,
-    focusOnSelect: true,
-    variableWidth: false,
-    slidesToShow: 3,
-    infinite: false,
+    // centerMode: false,
+    // focusOnSelect: true,
+    // variableWidth: false,
+    slidesToShow: slidesToShow,
+    // infinite: false,
     navigation: {
       prevEl: '.prev-btn',
       nextEl: '.next-btn',
@@ -54,7 +68,22 @@ $(document).ready(function () {
 
 
 
+
   // also 
+  let slidesAlso = document.querySelectorAll('.see-also .item');
+  console.log(slidesAlso);
+
+  let slidesToShowAlso;
+
+  if(slidesAlso.length<=3){
+    console.log('less')
+    slidesToShowAlso = slidesAlso.length;
+    $('#same .btn-wrap').css("display", "none")
+    
+  } else {
+    slidesToShowAlso = 3;
+  }
+
   let alsoSlider = $(".see-also");
   alsoSlider.slick({
     dots: false,
@@ -62,7 +91,7 @@ $(document).ready(function () {
     centerMode: false,
     focusOnSelect: true,
     variableWidth: false,
-    slidesToShow: 3,
+    slidesToShow: slidesToShowAlso,
     infinite: false,
     navigation: {
       prevEl: '.prev-btn',
