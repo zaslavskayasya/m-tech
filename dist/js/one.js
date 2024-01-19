@@ -119,20 +119,28 @@ $(document).ready(function () {
   let tabButtons = document.querySelectorAll(".tab-btn");
   let contentList = document.querySelectorAll(".content-item");
 
-  // Tabs
-  $(".tabs-wrap > a[href*='#']").on("click", function (e) {
-    let anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor.attr("href")).offset().top - 10,
-        },
-        777
-      );
-    e.preventDefault();
-    return false;
+  var $page = $('html, body');
+  $('.tab-btn').click(function() {
+      $page.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 900);
+      return false;
   });
+  // Tabs
+  // $(".tabs-wrap ").on("click", function (e) {
+  //   let anchor = $(this);
+  //   console.log(anchor)
+  //   $("html, body")
+  //     .stop()
+  //     .animate(
+  //       {
+  //         scrollTop: $(anchor.attr("href")).offset().top - 10,
+  //       },
+  //       777
+  //     );
+  //   e.preventDefault();
+  //   return false;
+  // });
 
   // Swiper
 });

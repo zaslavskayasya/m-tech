@@ -301,9 +301,10 @@
 }
 
 .specification {
-    padding-top: 100px;
+    padding-top: 0px;
     padding-left: 20px;
     margin-bottom: 80px;;
+    padding-bottom: 50px;;
     .normal_text-heading{
         text-transform: uppercase;
         margin-bottom: 50px;;
@@ -311,6 +312,10 @@
     h2, .h2{
         margin-bottom: 19px;;
     }
+}
+
+.char-block{
+    margin-bottom: 50px;
 }
 
 
