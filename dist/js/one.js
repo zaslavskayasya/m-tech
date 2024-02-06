@@ -28,11 +28,11 @@ $(document).ready(function () {
 
   if(slides.length<=3){
     console.log('less')
-    slidesToShow = slides.length;
+    slidesToShows = slides.length;
     $('.popular .btn-wrap').css("display", "none")
     
   } else {
-    slidesToShow = 3;
+    slidesToShows = 3;
   }
 
   let successSlider = $(".sccess-slider");
@@ -42,7 +42,7 @@ $(document).ready(function () {
     // centerMode: false,
     // focusOnSelect: true,
     // variableWidth: false,
-    slidesToShow: slidesToShow,
+    slidesToShow: slidesToShows,
     // infinite: false,
     navigation: {
       prevEl: '.prev-btn',
