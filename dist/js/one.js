@@ -161,7 +161,7 @@ $(document).ready(function () {
 
   $(".next-btn").click(function () {
     alsoSlider.slick("slickNext")
-
+  });
 
 
   let tabButtons = document.querySelectorAll(".tab-btn");
