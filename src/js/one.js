@@ -126,14 +126,14 @@ $(document).ready(function () {
   if(slidesAcces.length<=3){
     console.log('less')
     slidesToShowAcces = slidesAcces.length;
-    $('#same .btn-wrap').css("display", "none")
+    $('#sccess .btn-wrap').css("display", "none")
     
   } else {
     slidesToShowAcces = 3;
   }
 
-  let alsoSlider = $(".accesour");
-  alsoSlider.slick({
+  let alsoSliderAcessour = $(".accesour");
+  alsoSliderAcessour.slick({
     dots: false,
     arrows: false,
     centerMode: false,
