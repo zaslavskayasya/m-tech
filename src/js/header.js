@@ -1,4 +1,4 @@
-console.log('header loaded')
+// console.log('header loaded')
 
 let openMenuBtn = document.querySelector('.menu-button');
 let closeMenuBtn = document.querySelector('.close-button');

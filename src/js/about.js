@@ -1,4 +1,4 @@
-console.log('about ');
+// console.log('about ');
 
 $('.rewiew-slider').slick({
     slidesToShow: 1,

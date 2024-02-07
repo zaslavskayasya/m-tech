@@ -1,4 +1,4 @@
-console.log('video');
+// console.log('video');
 
 $(document).ready(function() {
 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({

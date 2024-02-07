@@ -1,4 +1,4 @@
-console.log("form loaded")
+// console.log("form loaded")
 
 
 function validateForm(event) {

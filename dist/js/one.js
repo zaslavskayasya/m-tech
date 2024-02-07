@@ -27,7 +27,7 @@ $(document).ready(function () {
   if(slides.length<=3){
     console.log('less')
     slidesToShows = slides.length;
-    $('.popular .btn-wrap').css("display", "none")
+    $('#viewed .btn-wrap').css("display", "none")
     
   } else {
     slidesToShows = 3;
@@ -43,8 +43,8 @@ $(document).ready(function () {
     slidesToShow: slidesToShows,
     // infinite: false,
     navigation: {
-      prevEl: '.prev-btn',
-      nextEl: '.next-btn',
+      prevEl: '#viewed .prev-btn',
+      nextEl: '#viewed .next-btn',
     },
     responsive: [
       {
@@ -57,11 +57,11 @@ $(document).ready(function () {
     ],
   });
 
-  $(".prev-btn").click(function () {
+  $("#viewed .prev-btn").click(function () {
     successSlider.slick("slickPrev");
   });
 
-  $(".next-btn").click(function () {
+  $("#viewed .next-btn").click(function () {
     successSlider.slick("slickNext");
   });
 
@@ -93,8 +93,8 @@ $(document).ready(function () {
     slidesToShow: slidesToShowAlso,
     infinite: false,
     navigation: {
-      prevEl: '.prev-btn',
-      nextEl: '.next-btn',
+      prevEl: '#same .prev-btn',
+      nextEl: '#same  .next-btn',
     },
     responsive: [
       {
@@ -107,12 +107,13 @@ $(document).ready(function () {
     ],
   });
 
-  $(".prev-btn").click(function () {
+  $("#same .prev-btn").click(function () {
     alsoSlider.slick("slickPrev");
   });
 
-  $(".next-btn").click(function () {
+  $("#same .next-btn").click(function () {
     alsoSlider.slick("slickNext")
+  });
 
 
 
@@ -144,8 +145,8 @@ $(document).ready(function () {
     slidesToShow: slidesToShowAcces,
     infinite: false,
     navigation: {
-      prevEl: '.prev-btn',
-      nextEl: '.next-btn',
+      prevEl: '.accesour .prev-btn',
+      nextEl: '.accesour .next-btn',
     },
     responsive: [
       {
@@ -158,12 +159,12 @@ $(document).ready(function () {
     ],
   });
 
-  $(".prev-btn").click(function () {
-    alsoSlider.slick("slickPrev");
+  $(".accesour .prev-btn").click(function () {
+    alsoSliderAcessour.slick("slickPrev");
   });
 
-  $(".next-btn").click(function () {
-    alsoSlider.slick("slickNext")
+  $(".accesour .next-btn").click(function () {
+    alsoSliderAcessour.slick("slickNext")
   });
 
 
@@ -216,6 +217,4 @@ $('.zoom-images').magnificPopup({
 });
 
 
-
-});
 //# sourceMappingURL=one.js.map

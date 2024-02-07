@@ -1,4 +1,3 @@
-console.log(`Loaded main.js`);
 
 
 $(document).ready(function(){
