@@ -114,6 +114,56 @@ $(document).ready(function () {
 
 
 
+
+
+
+  // accesour 
+  let slidesAcces = document.querySelectorAll('.accesour .item');
+  // console.log(slidesAlso);
+
+  let slidesToShowAcces;
+
+  if(slidesAcces.length<=3){
+    console.log('less')
+    slidesToShowAcces = slidesAcces.length;
+    $('#same .btn-wrap').css("display", "none")
+    
+  } else {
+    slidesToShowAcces = 3;
+  }
+
+  let alsoSlider = $(".accesour");
+  alsoSlider.slick({
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: false,
+    slidesToShow: slidesToShowAcces,
+    infinite: false,
+    navigation: {
+      prevEl: '.prev-btn',
+      nextEl: '.next-btn',
+    },
+    responsive: [
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".prev-btn").click(function () {
+    alsoSlider.slick("slickPrev");
+  });
+
+  $(".next-btn").click(function () {
+    alsoSlider.slick("slickNext")
+
+
+
   let tabButtons = document.querySelectorAll(".tab-btn");
   let contentList = document.querySelectorAll(".content-item");
 
