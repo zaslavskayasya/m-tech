@@ -51,6 +51,7 @@ $(document).ready(function () {
         breakpoint: 920,
         settings: {
           slidesToShow: 1,
+          focusOnSelect: false,
         },
       },
     ],
@@ -100,6 +101,7 @@ $(document).ready(function () {
         breakpoint: 920,
         settings: {
           slidesToShow: 1,
+          focusOnSelect: false,
         },
       },
     ],
@@ -150,6 +152,7 @@ $(document).ready(function () {
         breakpoint: 920,
         settings: {
           slidesToShow: 1,
+          focusOnSelect: false,
         },
       },
     ],
