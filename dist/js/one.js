@@ -1,5 +1,3 @@
-console.log("one page 1");
-
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
   slidesPerView: 3,
@@ -24,7 +22,7 @@ $(document).ready(function () {
   let slides = document.querySelectorAll('.sccess-slider .item');
   console.log(slides);
 
-  let slidesToShow;
+  let slidesToShows;
 
   if(slides.length<=3){
     console.log('less')
