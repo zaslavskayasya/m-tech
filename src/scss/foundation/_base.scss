@@ -564,9 +564,9 @@ body {
     padding: 0 22px 0 20px;
   }
   .three-row{
-    flex-direction: column;
-    align-items: center;
-    .row, .item{
+    // flex-direction: column;
+    // align-items: center;
+    .row, .item {
       width: 100%;
     }
   }
@@ -575,11 +575,12 @@ body {
     max-width: 300px;
     width: 300px;
   }
-  .card .card-img {
-    // height: auto;
-    // width: 100%;
-    // margin: 81px 0px 64px;
-  }
+  // TODO: Perhaps you can delete, but this is not for sure.
+  // .card .card-img {
+  //   // height: auto;
+  //   // width: 100%;
+  //   // margin: 81px 0px 64px;
+  // }
   .card .card-content{
     padding-left: 0px;
     
