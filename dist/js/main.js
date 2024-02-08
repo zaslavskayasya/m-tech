@@ -50,7 +50,6 @@ $(document).ready(function(){
               variableWidth: false,
               centerMode: false,
               dots: false
-
             }
           },
         ]
@@ -67,9 +66,14 @@ $(document).ready(function(){
 
       let cards = document.querySelectorAll(".item .card");
 
+      let relocation = card => {
+        window.location = card.querySelector('a').href;
+      };
       cards.forEach(card => {
-        card.addEventListener('click', event => {
-          window.location = card.querySelector('a').href;
+        card.querySelectorAll('.card-img, .header-card').forEach(el => {
+            el.addEventListener('click', () => {
+              relocation(card);
+            });
         });
       });
 
