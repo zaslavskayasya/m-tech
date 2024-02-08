@@ -28,7 +28,7 @@ body {
 .three-row, .three-row-v2 {
   display: flex;
   flex-flow: wrap;
-  .row, .item{
+  .row {
     width: 33.3%
   }
 }
@@ -50,6 +50,7 @@ body {
   transition: all ease 0.3s;
   border-radius: 15px;
   padding: 0px 15px 15px;
+  width: 392px;
   // cursor: pointer;
   .card-img {
     height: 357px;
@@ -183,13 +184,13 @@ body {
 //   transition: initial;
 // }
 
-.slick-slider {
-  // transition: initial;
-  text-align: center; /* Центрування тексту для блока */
-}
+// .slick-slider {
+//   // transition: initial;
+//   text-align: center; /* Центрування тексту для блока */
+// }
 
 .slick-slide {
-  display: inline-block; /* Робить слайди блоками, які ідуть в ряд */
+  // display: inline-block; /* Робить слайди блоками, які ідуть в ряд */
   vertical-align: top; /* Вирівнювання вертикально */
   img{
     width: 100%;
@@ -199,14 +200,14 @@ body {
 .slick-center .slick-slide {
   transition: all ease 0.3s;
   // transform: scale(1.2); /* Збільшити центральний слайд */
-  width: 1255px!important;
+  // width: 1255px !important; // FIXME: Perhaps it will be necessary to remove
   transition: transform 0.3s ease; /* Плавний перехід масштабу */
   margin: 17px 31px 20px 59px;
 }
-.slick-current{
-  // width: 1207px!important;
-  // transition: initial;
-}
+// .slick-current{
+//   // width: 1207px!important;
+//   // transition: initial;
+// }
 
 .nav-block{
   position: absolute;
@@ -521,43 +522,43 @@ body {
 
 
 
-@media screen and (max-width: 1300px){
-  .card .card-img{
-    // width: 100%;
-    width: 300px;
-    height: 272px;
-  }
-  .three-in-row-wrap .item{
-    margin-right: 16px;
-    width: 346px;
-  }
-  .container{
-    padding: 0 15px 0 15px;
-  }
+// @media screen and (max-width: 1300px){
+//   .card .card-img{
+//     // width: 100%;
+//     width: 300px;
+//     height: 272px;
+//   }
+//   .three-in-row-wrap .item{
+//     margin-right: 16px;
+//     width: 346px;
+//   }
+//   .container{
+//     padding: 0 15px 0 15px;
+//   }
 
 
-}
+// }
 
-@media screen and (max-width: 1118px){
-  .three-in-row-wrap .item{
-    margin-right: inherit;;
-    width: 40%;
-  }
-  .three-in-row-wrap .item:nth-child(3n) {
-      margin-right: inherit;
-  }
-  .three-in-row-wrap {
-      justify-content: space-evenly;
-  }
-}
+// @media screen and (max-width: 1118px){
+//   .three-in-row-wrap .item{
+//     margin-right: inherit;;
+//     width: 40%;
+//   }
+//   .three-in-row-wrap .item:nth-child(3n) {
+//       margin-right: inherit;
+//   }
+//   .three-in-row-wrap {
+//       justify-content: space-evenly;
+//   }
+// }
 
-.only-desc{
-    display: flex;
-}
-.only-mob, 
-.only-mob.more-btn{
-  display: none
-}
+// .only-desc{
+//     display: flex;
+// }
+// .only-mob, 
+// .only-mob.more-btn{
+//   display: none
+// }
 
 @media screen and (max-width: 768px){
   .container {
@@ -572,7 +573,7 @@ body {
   }
   .card{
     padding: 0px 5px;;
-    max-width: 300px;
+    // max-width: 300px;
     width: 300px;
   }
   // TODO: Perhaps you can delete, but this is not for sure.

@@ -435,10 +435,10 @@
     padding-top: 80px;;
     margin-bottom: 22px; ;
     padding-bottom: 80px;;
-    .container{ 
-        // overflow: auto;
-        // position: visible;
-    }
+    // .container{ 
+    //     // overflow: auto;
+    //     // position: visible;
+    // }
 }
 
 
@@ -517,32 +517,32 @@
 // }
 
 
-.slick-track,
-.slick-slide,
+// .slick-track,
+// .slick-slide,
 .slick-slide img {
     // transform: translate3d(0, 0, 0);
     width: 100%;
 }
 
-.slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
+// .slick-slider .slick-list {
+//     -webkit-transform: translate3d(0, 0, 0);
+//     -moz-transform: translate3d(0, 0, 0);
+//     -ms-transform: translate3d(0, 0, 0);
+//     -o-transform: translate3d(0, 0, 0);
+//     transform: translate3d(0, 0, 0);
+// }
 
-.popular#same {
-    .slick-initialized .slick-slide.item  {
-        width: 392px;
-    }
-}
+// .popular#same {
+//     .slick-initialized .slick-slide.item  {
+//         width: 392px;
+//     }
+// }
 
-#viewed .popular, .accesoires#sccess {
-    .slick-initialized .slick-slide.item  {
-        width: 392px;
-    }
-}
+// #viewed .popular, .accesoires#sccess {
+//     .slick-initialized .slick-slide.item  {
+//         width: 392px;
+//     }
+// }
 
 
 
@@ -803,34 +803,34 @@
 
     }
 
-    .popular#same, .accesoires#sccess {
-        .slick-initialized .slick-slide.item{
-            width: 320px;
-            max-width: 320px;
-        }
-       .slick-list {
-            // padding: 22px;
-            padding-left: 0px;
-        }
+    // .popular#same, .accesoires#sccess {
+    //     .slick-initialized .slick-slide.item{
+    //         width: 320px;
+    //         // max-width: 320px;
+    //     }
+    //    .slick-list {
+    //         // padding: 22px;
+    //         padding-left: 0px;
+    //     }
 
-    }
-    #viewed .popular{
-        .slick-initialized .slick-slide.item{
-            width: 320px;
-            max-width: 320px;
+    // }
+    // #viewed .popular{
+    //     .slick-initialized .slick-slide.item{
+    //         width: 320px;
+    //         // max-width: 320px;
 
-        }
-         .slick-list {
-            padding-left: 0px;;
-        }
-    }
-    .popular#same, #viewed .popular, .accesoires#sccess{
-        .slick-slider{
-            width: 320px;
-            margin: 0px auto;
-            overflow: hidden;
-        }
-    }
+    //     }
+    //      .slick-list {
+    //         padding-left: 0px;;
+    //     }
+    // }
+    // .popular#same, #viewed .popular, .accesoires#sccess{
+    //     .slick-slider {
+    //         width: 320px;
+    //         margin: 0px auto;
+    //         overflow: hidden;
+    //     }
+    // }
     
 }
 
