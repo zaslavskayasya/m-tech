@@ -31,7 +31,6 @@ $(document).ready(function () {
             {
                 breakpoint: 920,
                 settings: {
-                    initialSlide: 1,
                     slidesToShow: 1,
                 },
             },
