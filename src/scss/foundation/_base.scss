@@ -6,7 +6,7 @@
 
 html {
   font-size: 100%;
-  scroll-behavior: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
   // cursor: pointer;
   .card-img {
     height: 357px;
-    width: 306px;
+    width: 336px;
     display: flex;
     align-items: center;
     img{
@@ -130,7 +130,7 @@ body {
 
 
 .characters-table{
-  padding: 0px 10px 10px 0px;
+  padding: 0px 40px 10px 0px;
   .line{
     display: flex;
     justify-content: space-between;
@@ -523,7 +523,8 @@ body {
 
 @media screen and (max-width: 1300px){
   .card .card-img{
-    width: 100%;
+    // width: 100%;
+    width: 300px;
     height: 272px;
   }
   .three-in-row-wrap .item{
@@ -571,11 +572,13 @@ body {
   }
   .card{
     padding: 0px 5px;;
+    max-width: 300px;
+    width: 300px;
   }
   .card .card-img {
-    height: auto;
-    width: 100%;
-    margin: 81px 0px 64px;
+    // height: auto;
+    // width: 100%;
+    // margin: 81px 0px 64px;
   }
   .card .card-content{
     padding-left: 0px;

@@ -20,6 +20,23 @@ const swiper2 = new Swiper(".mySwiper2", {
 
 $(document).ready(function () {
   let slides = document.querySelectorAll('.sccess-slider .item');
+  // Настройка всех слайдеров в одном объекте
+  let slick_settings = {
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 920,
+        settings: {
+          focusOnSelect: false,
+          adaptiveHeight: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   console.log(slides);
 
   let slidesToShows;
@@ -34,28 +51,7 @@ $(document).ready(function () {
   }
 
   let successSlider = $(".sccess-slider");
-  successSlider.slick({
-    dots: false,
-    arrows: false,
-    // centerMode: false,
-    // focusOnSelect: true,
-    // variableWidth: false,
-    slidesToShow: slidesToShows,
-    // infinite: false,
-    navigation: {
-      prevEl: '#viewed .prev-btn',
-      nextEl: '#viewed .next-btn',
-    },
-    responsive: [
-      {
-        breakpoint: 920,
-        settings: {
-          slidesToShow: 1,
-          focusOnSelect: false,
-        },
-      },
-    ],
-  });
+  successSlider.slick(slick_settings);
 
   $("#viewed .prev-btn").click(function () {
     successSlider.slick("slickPrev");
@@ -84,34 +80,13 @@ $(document).ready(function () {
   }
 
   let alsoSlider = $(".see-also");
-  alsoSlider.slick({
-    dots: false,
-    arrows: false,
-    centerMode: false,
-    focusOnSelect: true,
-    variableWidth: false,
-    slidesToShow: slidesToShowAlso,
-    infinite: false,
-    navigation: {
-      prevEl: '#same .prev-btn',
-      nextEl: '#same  .next-btn',
-    },
-    responsive: [
-      {
-        breakpoint: 920,
-        settings: {
-          slidesToShow: 1,
-          focusOnSelect: false,
-        },
-      },
-    ],
-  });
+  alsoSlider.slick(slick_settings);
 
-  $("#same .prev-btn").click(function () {
+  $("#same.popular .prev-btn").click(function () {
     alsoSlider.slick("slickPrev");
   });
 
-  $("#same .next-btn").click(function () {
+  $("#same.popular .next-btn").click(function () {
     alsoSlider.slick("slickNext")
   });
 
@@ -129,41 +104,20 @@ $(document).ready(function () {
   if(slidesAcces.length<=3){
     console.log('less')
     slidesToShowAcces = slidesAcces.length;
-    $('#sccess .btn-wrap').css("display", "none")
+    $('#accesoires .btn-wrap').css("display", "none")
     
   } else {
     slidesToShowAcces = 3;
   }
 
   let alsoSliderAcessour = $(".accesour");
-  alsoSliderAcessour.slick({
-    dots: false,
-    arrows: false,
-    centerMode: false,
-    focusOnSelect: true,
-    variableWidth: false,
-    slidesToShow: slidesToShowAcces,
-    infinite: false,
-    navigation: {
-      prevEl: '.accesour .prev-btn',
-      nextEl: '.accesour .next-btn',
-    },
-    responsive: [
-      {
-        breakpoint: 920,
-        settings: {
-          slidesToShow: 1,
-          focusOnSelect: false,
-        },
-      },
-    ],
-  });
+  alsoSliderAcessour.slick(slick_settings);
 
-  $(".accesour .prev-btn").click(function () {
+  $(".accesoires .prev-btn").click(function () {
     alsoSliderAcessour.slick("slickPrev");
   });
 
-  $(".accesour .next-btn").click(function () {
+  $(".accesoires .next-btn").click(function () {
     alsoSliderAcessour.slick("slickNext")
   });
 
