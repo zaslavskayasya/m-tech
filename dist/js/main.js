@@ -131,3 +131,4 @@ document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener(
 //       e.preventDefault();
 //   } )
 // }
+//# sourceMappingURL=main.js.map

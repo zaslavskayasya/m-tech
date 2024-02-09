@@ -336,9 +336,9 @@
     padding-bottom:40px;
 
 }
-.slick-initialized .slick-slide{
-    padding: 20px;
-}
+// .slick-initialized .slick-slide{
+//     padding: 20px;
+// }
 .gallery-block .slick-initialized .slick-slide{
         padding: 0px;
 }
@@ -518,6 +518,18 @@
     }
 
 }
+
+.left-gallery{
+    width: 61%;
+    img{
+        width: 100%;
+    }
+}
+
+.slider-left{
+
+}
+
 
 @media screen and (max-width: 1200px){
     .left-gallery{
