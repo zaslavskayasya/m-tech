@@ -29,7 +29,13 @@ $(document).ready(function () {
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 920,
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                 },
