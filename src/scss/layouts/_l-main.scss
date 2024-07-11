@@ -29,19 +29,26 @@
 }
 #cross{
     cursor: none;
-}
-
-#cross.showed{
     height: 85px;
     width: 85px;
     background-repeat: no-repeat;
     position: absolute;
+    // transition: all ease 0.3s;;
+}
+
+#cross.showed{
+
     display: block;
     z-index: 3;
+    // left:45%;
+    // top: 46%;
     cursor: none;
     background-image: url('./../img/illustration/cross2.png');
 }
-
+@keyframes slide {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(10px); }
+}
 #circle{
     position: relative;
     width: 100%;
@@ -50,8 +57,10 @@
     mask-repeat: no-repeat;
     mask-size: 250px;
     cursor: none;
+    // transition: all ease 0.3s;;
     // cursor: url('./../img/illustration/cross2.png'), pointer;
     background-size: cover;
+//  animation: slide 2s infinite alternate;
 }
 
 .choose-buttons {
