@@ -238,6 +238,8 @@ function hideFinger() {
 
   document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener('click', function() {
       document.querySelector("#circle").style.backgroundImage = `url(${item.getAttribute('data-bg')})`;
+      $('#move').removeClass('hidden');
+      firstMouseMove = true;
   }));
 
   startAnimation(); // Start animation initially
