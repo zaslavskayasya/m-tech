@@ -128,12 +128,16 @@ $(document).ready(function() {
   let currentMousePos = { x: (window.innerWidth / 2) - 120, y: (window.innerHeight / 2) - 120 };
   let isAnimating = false;
   let animationInterval;
+  // let finger = $('#move');
+  let firstMouseMove = true; // Flag to track the first mouse movement
 
   $('#circle').css('-webkit-mask-position-x', currentMousePos.x);
   $('#circle').css('-webkit-mask-position-y', currentMousePos.y);
 
   $('#cross').css('top', (window.innerHeight / 2) - 30);
   $('#cross').css('left', (window.innerWidth / 2) - 35);
+
+
 
   console.log($('#cross').width());
 
@@ -172,7 +176,13 @@ $(document).ready(function() {
     $('#cross').css({
         'transition': 'none'
     });
+    // finger.classList.add('hidden')
   }
+
+// Function to hide the finger image
+function hideFinger() {
+  $('#move').addClass('hidden');
+}
 
   $('#scene').mousemove(function(e) {
       stopAnimation();
@@ -181,6 +191,11 @@ $(document).ready(function() {
 
       $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 125}px ${currentMousePos.y - 125}px`);
       $('#cross').css({ 'top': currentMousePos.y - 40, 'left': currentMousePos.x - 40 });
+
+      if (firstMouseMove) {
+        hideFinger();
+        firstMouseMove = false; // Ensure the class is added only once
+      }
 
       // setTimeout(startAnimation, 2000); // Start animation after 2 seconds of no mouse movement
   });
@@ -194,7 +209,10 @@ $(document).ready(function() {
 
       $('#circle').css('-webkit-mask-position', `${currentMousePos.x - 125}px ${currentMousePos.y - 125}px`);
       $('#cross').css({ 'top': currentMousePos.y - 40, 'left': currentMousePos.x - 40 });
-
+      if (firstMouseMove) {
+        hideFinger();
+        firstMouseMove = false; // Ensure the class is added only once
+      }
       // setTimeout(startAnimation, 2000); // Start animation after 2 seconds of no touch movement
   });
 

@@ -37,7 +37,6 @@
 }
 
 #cross.showed{
-
     display: block;
     z-index: 3;
     // left:45%;
@@ -45,10 +44,45 @@
     cursor: none;
     background-image: url('./../img/illustration/cross2.png');
 }
+
 @keyframes slide {
     0% { transform: translateY(-10px); }
     100% { transform: translateY(10px); }
 }
+
+#move{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    background-size: contain;
+    animation: moveFinger 2s infinite alternate;
+    opacity: 1;
+}
+
+@keyframes moveFinger {
+    0% {
+      top: 45%; /* Starting position */
+      opacity: 1;
+    }
+    100% {
+      top: 55%; /* Ending position */
+      opacity: 0;
+    }
+  }
+
+@media screen and (max-width: 600px){
+    #move{
+        left: 75%;
+    }
+}
+
+#move.hidden {
+    display: none;
+  }
+
+
 #circle{
     position: relative;
     width: 100%;
