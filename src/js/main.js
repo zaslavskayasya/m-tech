@@ -82,48 +82,6 @@ $(document).ready(function(){
 });
 
 
-
-
-// let currentMousePos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-//     const circle = $('#circle');
-//     const cross = $('#cross');
-
-//     // Initial positioning
-//     circle.css({ 'top': `${currentMousePos.y - 125}px`, 'left': `${currentMousePos.x - 125}px` });
-//     cross.css({ 'top': `${currentMousePos.y - 120}px`, 'left': `${currentMousePos.x - 120}px` });
-
-//     // Mouse move event
-//     $('#scene').mousemove(function(e) {
-//         currentMousePos.x = e.pageX;
-//         currentMousePos.y = e.pageY;
-
-//         circle.css('transform', `translate(${currentMousePos.x - (window.innerWidth / 2) - 125}px, ${currentMousePos.y - (window.innerHeight / 2) - 125}px)`);
-//         cross.css('transform', `translate(${currentMousePos.x - (window.innerWidth / 2) - 40}px, ${currentMousePos.y - (window.innerHeight / 2) - 40}px)`);
-//     });
-
-//     // Mouse enter and leave events
-//     $('#scene').mouseleave(e => {
-//         circle.css('transform', 'translate(0, 0)');
-//         cross.removeClass('showed');
-//     });
-
-//     $('#scene').mouseenter(e => {
-//         cross.addClass('showed');
-//     });
-
-//     // Choose buttons events
-//     $('.choose-buttons').mouseleave(e => {
-//         cross.addClass('showed');
-//     });
-
-//     $('.choose-buttons').mouseenter(e => {
-//         cross.removeClass('showed');
-//     });
-
-//     document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener('click', function () {
-//         document.querySelector("#circle").style.backgroundImage = `url(${item.getAttribute('data-bg')})`;
-//     }));
-
 $(document).ready(function() {
   let currentMousePos = { x: (window.innerWidth / 2) - 120, y: (window.innerHeight / 2) - 120 };
   let isAnimating = false;
@@ -139,7 +97,7 @@ $(document).ready(function() {
 
 
 
-  console.log($('#cross').width());
+  // console.log($('#cross').width());
 
   $('#cross').addClass('showed');
 
@@ -225,6 +183,7 @@ function hideFinger() {
       $('#circle').css('mask-size', '250px');
       $('#cross').addClass('showed');
   });
+  
 
   $('.choose-buttons').mouseleave(e => {
       $('#circle').css('mask-size', '250px');
@@ -236,11 +195,14 @@ function hideFinger() {
       $('#cross').removeClass('showed');
   });
 
-  document.querySelectorAll('.wrap-choose').forEach(item => item.addEventListener('click', function() {
-      document.querySelector("#circle").style.backgroundImage = `url(${item.getAttribute('data-bg')})`;
-      $('#move').removeClass('hidden');
-      firstMouseMove = true;
+
+  let chooseArray = document.querySelectorAll('.wrap-choose');
+  let cirCle = document.querySelector("#circle");
+
+  chooseArray.forEach(item => item.addEventListener('click', function(e) {
+      cirCle.src = item.dataset.bg;
   }));
+
 
   startAnimation(); // Start animation initially
 });
